@@ -80,9 +80,9 @@ class Countdown extends React.Component {
 
         return (
             <div>
-                <div className="countdown-wrapper">
+                <div>
                     {minutes && (
-                        <div className="countdown-item">
+                        <div className="L1-0032">
                             L{level} {minutes}:{seconds}
                         </div>
                     )}

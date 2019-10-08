@@ -1,0 +1,27 @@
+.Oval {
+  width: 40px;
+  height: 40px;
+  border: solid 2px #ffffff;
+  border-radius: 50%;
+}
+
+.ScoreColor {
+  height: 43px;
+  font-size: 32px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.HeaderLeft {
+  display: flex;
+}

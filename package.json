@@ -13,6 +13,7 @@
     "bs-platform": "5.0.6",
     "express": "4.17.1",
     "fetch": "1.1.0",
+    "file-loader": "^4.2.0",
     "fp-ts": "2.1.0",
     "gentype": "2.40.1",
     "io-ts": "2.0.1",
@@ -26,7 +27,8 @@
     "react": "16.10.2",
     "react-beautiful-dnd": "11.0.5",
     "react-card-flip": "^0.8.1",
-    "react-dom": "16.10.2"
+    "react-dom": "16.10.2",
+    "url-loader": "^2.2.0"
   },
   "devDependencies": {
     "@types/node": "12.7.11",

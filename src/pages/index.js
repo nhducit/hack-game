@@ -3,6 +3,7 @@ import React from "react";
 
 import GridLayout from "../components/gridLayout";
 import Countdown from "../components/Countdown";
+import GameHeader from "../components/GameHeader";
 import moment from 'moment';
 
 const testCards = [...Array(6).keys()].map(v => ({
@@ -105,41 +106,42 @@ class Game extends React.Component {
     }
 
     return (
-      <div
-        style={{
-          display: "flex",
-          flex: "1",
-          flexDirection: "column",
-          alignItems: "center",
-          marginTop: "10px"
-        }}
-      >
+      <div>
+        <GameHeader />
 
-        <Countdown then={then} timeOver={timeOver} level={level} />
-
-        <GridLayout
-          onFlipCard={this.onFlipCard}
-          cards={cards}
-          layout={{ rows: 4, columns: 4, width: "50px", height: "50px" }}
-          blank={[
-            {
-              x: 0,
-              y: 0
-            },
-            {
-              x: 0,
-              y: 3
-            },
-            {
-              x: 3,
-              y: 0
-            },
-            {
-              x: 3,
-              y: 3
-            }
-          ]}
-        />
+        <div
+          style={{
+            display: "flex",
+            flex: "1",
+            flexDirection: "column",
+            alignItems: "center",
+            marginTop: "10px"
+          }}
+        >
+          <GridLayout
+            onFlipCard={this.onFlipCard}
+            cards={cards}
+            layout={{ rows: 4, columns: 4, width: "50px", height: "50px" }}
+            blank={[
+              {
+                x: 0,
+                y: 0
+              },
+              {
+                x: 0,
+                y: 3
+              },
+              {
+                x: 3,
+                y: 0
+              },
+              {
+                x: 3,
+                y: 3
+              }
+            ]}
+          />
+        </div>
       </div>
     );
   };
