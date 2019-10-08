@@ -5,6 +5,7 @@ import GridLayout from "../components/gridLayout";
 import Countdown from "../components/Countdown";
 import GameHeader from "../components/GameHeader";
 import moment from 'moment';
+import Index from "./Index.css"
 
 const testCards = [...Array(6).keys()].map(v => ({
   type: "card",
@@ -100,14 +101,20 @@ class Game extends React.Component {
     const { cards } = this.state;
 
     const level = 4
-    const then = moment().add(15, "seconds")
+    const score = 526;
+    const then = moment().add(90, "seconds")
     const timeOver = () => {
       console.log("time over")
     }
 
     return (
       <div>
-        <GameHeader />
+        <GameHeader
+          level={level}
+          score={score}
+          then={then}
+          timeOver={timeOver}
+          />
 
         <div
           style={{
@@ -115,7 +122,7 @@ class Game extends React.Component {
             flex: "1",
             flexDirection: "column",
             alignItems: "center",
-            marginTop: "10px"
+            marginTop: "90px"
           }}
         >
           <GridLayout

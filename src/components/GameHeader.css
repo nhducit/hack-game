@@ -3,9 +3,10 @@
   height: 40px;
   border: solid 2px #ffffff;
   border-radius: 50%;
+  margin-right: 8px;
 }
 
-.ScoreColor {
+.Score {
   height: 43px;
   font-size: 32px;
   font-weight: bold;
@@ -14,14 +15,36 @@
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  color: #000;
+  color: #fff;
+}
+
+.Level {
+  width: 139px;
+  height: 43px;
+  margin-right: 8px;
+  font-size: 32px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #a950a8;
 }
 
 .Header {
   display: flex;
   justify-content: space-between;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .HeaderLeft {
+  display: flex;
+}
+
+.HeaderRight {
   display: flex;
 }

@@ -31,7 +31,6 @@ class Countdown extends React.Component {
 
           const nowCompare = now.clone().add(1, "seconds")
           if (nowCompare.isAfter(then)) {
-            console.log("gogogo");
             if (this.interval) {
                 this.props.timeOver();
                 clearInterval(this.interval);
@@ -63,14 +62,11 @@ class Countdown extends React.Component {
     }
 
     render() {
-        const level = this.props.level;
-        const { days, hours, minutes, seconds } = this.state;
+        const { minutes, seconds } = this.state;
 
         console.log("render");
 
         // Mapping the date values to radius values
-        const daysRadius = mapNumber(days, 30, 0, 0, 360);
-        const hoursRadius = mapNumber(hours, 24, 0, 0, 360);
         const minutesRadius = mapNumber(minutes, 60, 0, 0, 360);
         const secondsRadius = mapNumber(seconds, 60, 0, 0, 360);
 
@@ -83,7 +79,7 @@ class Countdown extends React.Component {
                 <div>
                     {minutes && (
                         <div className="L1-0032">
-                            L{level} {minutes}:{seconds}
+                            {minutes}:{seconds}
                         </div>
                     )}
                 </div>

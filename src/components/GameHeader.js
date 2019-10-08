@@ -7,21 +7,21 @@ class GameHeader extends React.Component {
 
     render() {
 
-      const level = 4
-      const then = moment().add(15, "seconds")
-      const timeOver = () => {
-        console.log("time over")
-      }
+      const score = this.props.score;
+      const level = this.props.level;
+      const then = this.props.then;
+      const timeOver = this.props.timeOver;
 
       return (
         <div className="Header">
-          <div>
-            <div className="HeaderLeft">
-              <img className="Oval" src="https://library.kissclipart.com/20181005/pe/kissclipart-gif-me-preocupas-clipart-sina-weibo-avatar-clip-ar-8505f646feab9d9f.png" alt="avatar"/>
-              <div className="ScoreColor">424</div>
-            </div>
+          <div className="HeaderLeft">
+            <img className="Oval" src="./avatar.png" alt="avatar"/>
+            <div className="Score">{score}</div>
           </div>
-          <Countdown then={then} timeOver={timeOver} level={level} />
+          <div className="HeaderRight">
+            <div className="Level">L{level}</div>
+            <Countdown then={then} timeOver={timeOver} />
+          </div>
         </div>
       );
     }
