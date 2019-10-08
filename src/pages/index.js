@@ -2,6 +2,8 @@ import Head from "next/head";
 import React from "react";
 
 import GridLayout from "../components/gridLayout";
+import Countdown from "../components/Countdown";
+import moment from 'moment';
 
 const testCards = [...Array(6).keys()].map(v => ({
   type: "card",
@@ -95,6 +97,13 @@ class Game extends React.Component {
 
   render = () => {
     const { cards } = this.state;
+
+    const level = 4
+    const then = moment().add(15, "seconds")
+    const timeOver = () => {
+      console.log("time over")
+    }
+
     return (
       <div
         style={{
@@ -105,6 +114,9 @@ class Game extends React.Component {
           marginTop: "10px"
         }}
       >
+
+        <Countdown then={then} timeOver={timeOver} level={level} />
+
         <GridLayout
           onFlipCard={this.onFlipCard}
           cards={cards}

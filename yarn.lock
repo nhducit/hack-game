@@ -6870,6 +6870,11 @@ react-beautiful-dnd@11.0.5:
     tiny-invariant "^1.0.4"
     use-memo-one "^1.1.0"
 
+react-card-flip@^0.8.1:
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/react-card-flip/-/react-card-flip-0.8.1.tgz#53cd036d5145a10a5c45f2419252d6b5f8e47d8e"
+  integrity sha512-iuyRAya8anf5aaR6BTCYyF4Z767WEgzkYSUfjxEG2zwQYvXHv98NtngAQRM+lqmwYLPTv/5cuCIOsZapy38x0g==
+
 react-dom@16.10.2:
   version "16.10.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.10.2.tgz#4840bce5409176bc3a1f2bd8cb10b92db452fda6"
