@@ -40,7 +40,7 @@ const shuffle = ({ cards }) => {
 
 const levels = {
   1: {
-    time: 120,
+    time: 119,
     numOfCards: 3,
     numOfBomb: 1,
     layout: {
@@ -65,8 +65,37 @@ const levels = {
         y: 3
       }
     ]
+  },
+  2: {
+    time: 119,
+    numOfCards: 7,
+    numOfBomb: 1,
+    layout: {
+      rows: 4,
+      columns: 4
+    },
+    blank: [
+      {
+        x: 0,
+        y: 0
+      },
+      {
+        x: 0,
+        y: 3
+      },
+      {
+        x: 2,
+        y: 0
+      },
+      {
+        x: 2,
+        y: 3
+      }
+    ]
   }
 };
+
+const numOfLevel = 2;
 
 const generate = ({ level }) => {
   const config = levels[level];
@@ -92,4 +121,4 @@ const generate = ({ level }) => {
   };
 };
 
-export { generate };
+export { generate, numOfLevel };

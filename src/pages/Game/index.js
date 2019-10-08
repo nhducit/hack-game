@@ -1,9 +1,11 @@
 import Head from "next/head";
 import React from "react";
 import posed from "react-pose";
-import { generate } from "./levelGenerator";
+import { generate, numOfLevel } from "./levelGenerator";
 import GameHeader from "../../components/GameHeader";
 import { user, rules } from "../gamePlay";
+import moment from "moment";
+import Wrapper from "../../components/wrapPage";
 
 import GridLayout from "../../components/gridLayout";
 
@@ -22,22 +24,32 @@ const Point = posed.div({
   }
 });
 
+const defaultState = {
+  cards: [],
+  layout: {},
+  blank: [],
+  canFlip: 2,
+  openedCards: {},
+  pointUp: { time: 0, value: 0 }
+};
+
 class Game extends React.Component {
-  state = {
-    cards: [],
-    layout: {},
-    blank: [],
-    canFlip: 2,
-    openedCards: {},
-    point: user.point,
-    pointUp: { time: 0, value: 0 }
-  };
+  state = defaultState;
 
   componentDidMount = () => {
     const { level } = this.props;
-    const config = generate({ level: level || 1 });
+    this.setupLevel({ level: level });
+  };
+
+  setupLevel = ({ level }) => {
+    const l = level || 1;
+    const config = generate({ level: l });
     this.setState({
-      ...config
+      ...defaultState,
+      ...config,
+      then: moment().add(config.time, "seconds"),
+      level: l,
+      point: user.point
     });
   };
 
@@ -62,7 +74,17 @@ class Game extends React.Component {
       };
     });
 
+    let numOfMarked = cards.reduce((result, value) => {
+      return result + (value.marked ? 1 : 0);
+    }, 0);
+
     this.setState({ cards });
+
+    console.log("NGHIA: numOfMarked");
+    console.log(numOfMarked);
+    if (numOfMarked == cards.length) {
+      this.toNextLevel();
+    }
   };
 
   removeCards = ({ indexs }) => {
@@ -180,85 +202,77 @@ class Game extends React.Component {
     this.setCardSide({ index, side: "back" });
   };
 
-  onTimeOver = () => {};
+  onTimeOver = () => {
+    //show popup
+  };
+
+  toNextLevel = () => {
+    let nextLevel = this.state.level + 1;
+    if (nextLevel > numOfLevel) {
+      // go to dashboard
+    } else {
+      this.setupLevel({ level: nextLevel });
+    }
+  };
 
   render = () => {
-    const { level } = this.props;
-    const { cards, pointUp, layout, blank, time, point } = this.state;
+    const { cards, pointUp, layout, blank, then, point, level } = this.state;
     const pointUpModel = this.pointUpModel({ pointUp });
 
     return (
-      <div
-        style={{
-          display: "flex",
-          flex: "1",
-          backgroundColor: "white",
-          justifyContent: "center",
-          flexDirection: "row"
-        }}
-      >
-        <div
+      <Wrapper bg={images.bgGame()}>
+        <GameHeader
+          level={level}
+          score={point}
+          then={then}
+          timeOver={this.onTimeOver}
+        />
+
+        <div style={{ marginTop: "100px" }}></div>
+
+        <GridLayout
+          backCardIcon={images.backCardIcon()}
+          onFlipCard={this.onFlipCard}
+          cards={cards}
+          layout={layout}
+          blank={blank}
+        />
+        <Point
+          pose={pointUp.value != 0 ? "visible" : "hidden"}
+          nextY={30}
+          fromY={40}
           style={{
-            display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            width: "375px",
-            height: "100vh",
-            minHeight: "667px",
-            backgroundImage: `url(${images.bgGame()})`,
-            backgroundSize: "cover"
+            display: "flex",
+            position: "absolute",
+            y: 40,
+            x: 200
           }}
         >
-          <GameHeader
-            level={level}
-            score={point}
-            then={time}
-            timeOver={this.onTimeOver}
-          />
-
-          <GridLayout
-            backCardIcon={images.backCardIcon()}
-            onFlipCard={this.onFlipCard}
-            cards={cards}
-            layout={layout}
-            blank={blank}
-          />
-          <Point
-            pose={pointUp.value != 0 ? "visible" : "hidden"}
-            nextY={30}
-            fromY={40}
+          <p
             style={{
-              flexDirection: "column",
-              alignItems: "center",
-              display: "flex",
-              position: "absolute",
-              y: 40
+              fontFamily: "Fabriga",
+              fontSize: "20px",
+              fontWeight: "bold",
+              lineHeight: 1.67,
+              color: "#33e1ff"
             }}
           >
-            <p
-              style={{
-                fontFamily: "Fabriga",
-                fontSize: "20px",
-                fontWeight: "bold",
-                lineHeight: 1.67,
-                color: "#33e1ff"
-              }}
-            >
-              {pointUpModel.header}
-            </p>
-            <p
-              style={{
-                fontFamily: "Fabriga",
-                fontSize: "48px",
-                fontWeight: "bold",
-                color: "#33e1ff"
-              }}
-            >
-              {pointUpModel.title}
-            </p>
-          </Point>
-        </div>
-      </div>
+            {pointUpModel.header}
+          </p>
+          <p
+            style={{
+              fontFamily: "Fabriga",
+              fontSize: "48px",
+              fontWeight: "bold",
+              color: "#33e1ff"
+            }}
+          >
+            {pointUpModel.title}
+          </p>
+        </Point>
+      </Wrapper>
     );
   };
 }
