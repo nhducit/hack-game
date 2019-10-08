@@ -34,7 +34,7 @@ const getItems = ({ cards, layout, blank }) => {
 };
 
 const GridLayout = props => {
-  const { cards, layout, blank, onFlipCard } = props;
+  const { cards, layout, blank, onFlipCard, backCardIcon } = props;
 
   const items = getItems({
     cards,
@@ -77,6 +77,8 @@ const GridLayout = props => {
                     index={item.index}
                     onFlipCard={onFlipCard}
                     id={item.id}
+                    backImage={backCardIcon}
+                    image={item.image}
                   />
                 );
               } else {

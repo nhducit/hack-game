@@ -8,7 +8,7 @@ class Card extends React.Component {
   render = () => {
     const props = this.props;
     const isFlipped = this.props.side == "front";
-
+    const { backImage, image } = this.props;
     return (
       <ReactCardFlip
         key={props.key}
@@ -23,24 +23,25 @@ class Card extends React.Component {
             width: props.width,
             height: props.height,
             marginLeft: props.marginLeft,
-            borderRadius: "4px"
+            borderRadius: "4px",
+            backgroundImage: `url(${backImage})`,
+            backgroundSize: "cover"
           }}
         />
-        <button
+        <div
           key="back"
           style={{
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            backgroundColor: "#991720",
             width: props.width,
             height: props.height,
             marginLeft: props.marginLeft,
-            borderRadius: "4px"
+            borderRadius: "4px",
+            backgroundImage: `url(${image})`,
+            backgroundSize: "cover"
           }}
-        >
-          <p style={{ color: "#000", fontSize: 14 }}>{props.id}</p>
-        </button>
+        />
         />
       </ReactCardFlip>
     );

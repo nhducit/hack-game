@@ -1,23 +1,14 @@
 const withCSS = require("@zeit/next-css");
+const withImages = require("next-images");
+module.exports = withImages(
+  withCSS({
+    webpack: config => {
+      // Fixes npm packages that depend on `fs` module
+      config.node = {
+        fs: "empty"
+      };
 
-module.exports = withCSS({
-  webpack: config => {
-    // Fixes npm packages that depend on `fs` module
-    config.node = {
-      fs: "empty"
-    };
-
-    config.module.rules.push({
-      test: /\.(eot|woff|woff2|ttf|svg|png|jpg|gif)$/,
-      use: {
-        loader: 'url-loader',
-        options: {
-          limit: 100000,
-          name: '[name].[ext]'
-        }
-      }
-    })
-
-    return config;
-  }
-});
+      return config;
+    }
+  })
+);
