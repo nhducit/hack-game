@@ -1,0 +1,38 @@
+{
+  "name": "create-next-example-app",
+  "scripts": {
+    "dev": "nodemon --watch ./server.js server.js",
+    "build": "next build",
+    "start": "next start",
+    "build:css": "NODE_ENV=production postcss src/styles/index.css -o src/tailwind.css",
+    "watch:css": "postcss src/styles/index.css -o src/tailwind.css -w"
+  },
+  "dependencies": {
+    "@zeit/next-css": "1.0.1",
+    "antd": "3.23.6",
+    "bs-platform": "5.0.6",
+    "express": "4.17.1",
+    "fetch": "1.1.0",
+    "fp-ts": "2.1.0",
+    "gentype": "2.40.1",
+    "io-ts": "2.0.1",
+    "io-ts-reporters": "1.0.0",
+    "isomorphic-unfetch": "3.0.0",
+    "ky": "0.15.0",
+    "next": "9.1.0",
+    "postcss-cli": "6.1.3",
+    "react": "16.10.2",
+    "react-beautiful-dnd": "11.0.5",
+    "react-dom": "16.10.2"
+  },
+  "devDependencies": {
+    "@types/node": "12.7.11",
+    "@types/react": "16.9.5",
+    "autoprefixer": "9.6.4",
+    "cssnano": "4.1.10",
+    "nodemon": "1.19.3",
+    "postcss-easy-import": "3.0.0",
+    "tailwindcss": "1.1.2",
+    "typescript": "3.6.3"
+  }
+}

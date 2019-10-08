@@ -1,0 +1,466 @@
+{
+  "id": "fieldset_0",
+  "meta": {
+    "base_cdn_url": "https://sl3-cdn.karousell.com/components/"
+  },
+  "screens": [
+    {
+      "groups": [
+        {
+          "fields": [
+            {
+              "dependency_rules": [],
+              "id": "field_0",
+              "meta": {
+                "component": "photo_viewer",
+                "field_name": "photos"
+              },
+              "ui_rules": {
+                "server_formatting_rules": {
+                  "paragraphs": [
+                    {
+                      "content": "car_type"
+                    },
+                    {
+                      "content": "driving_options"
+                    },
+                    {
+                      "content": "minimum_driving_experience"
+                    }
+                  ],
+                  "seller_image": "",
+                  "tags": {
+                    "711": "TAG_711_DISPLAY_NAME",
+                    "and_more": "TAG_AND_MORE_DISPLAY_NAME",
+                    "caroupay": "TAG_CAROUPAY_DISPLAY_NAME",
+                    "mailing": "TAG_MAILING_DISPLAY_NAME",
+                    "meetup": "TAG_MEETUP_DISPLAY_NAME",
+                    "minimum_driving_experience_suffix": "TAG_MINIMUM_DRIVING_EXPERIENCE_SUFFIX",
+                    "new_item": "TAG_NEW_DISPLAY_NAME",
+                    "used_item": "TAG_USED_DISPLAY_NAME"
+                  },
+                  "title": ""
+                },
+                "visible": true
+              },
+              "validation_rules": []
+            },
+            {
+              "dependency_rules": [],
+              "id": "field_1",
+              "meta": {
+                "component": "purchase",
+                "field_name": "purchase_info"
+              },
+              "ui_rules": {
+                "server_formatting_rules": {
+                  "purchase_info": {
+                    "3d_bump": {
+                      "bump_button_text": "TAG_PROMOTE_BUTTON_TEXT",
+                      "text": "TAG_PROMOTE_BUTTON_DESCRIPTION"
+                    },
+                    "listing_fees": {
+                      "publish_button_text": "TAG_PUBLISH_BUTTON_TEXT",
+                      "renew_button_text": "TAG_RENEW_BUTTON_TEXT",
+                      "text": "TAG_LISTING_QUOTA_EXCEEDED_TEXT"
+                    }
+                  }
+                },
+                "visible": true
+              },
+              "validation_rules": []
+            },
+            {
+              "dependency_rules": [],
+              "id": "field_2",
+              "meta": {
+                "component": "paragraph",
+                "default_value": "",
+                "field_name": "title"
+              },
+              "ui_rules": {
+                "align_left": true,
+                "cds_text_style": "cds_text_style_title_3",
+                "font_size": "large",
+                "visible": true
+              },
+              "validation_rules": []
+            },
+            {
+              "dependency_rules": [],
+              "id": "field_3",
+              "meta": {
+                "component": "paragraph",
+                "default_value": "",
+                "field_name": "price"
+              },
+              "ui_rules": {
+                "cds_text_style": "cds_text_style_large",
+                "font_size": "small",
+                "icon_path": {
+                  "android": {
+                    "hdpi": "price_v2_1@hdpi.png",
+                    "mdpi": "price_v2_1@mdpi.png",
+                    "xhdpi": "price_v2_1@xhdpi.png",
+                    "xxhdpi": "price_v2_1@xxhdpi.png",
+                    "xxxhdpi": "price_v2_1@xxxhdpi.png"
+                  },
+                  "ios": {
+                    "2x": "price_v2_1@2x.png",
+                    "3x": "price_v2_1@3x.png"
+                  },
+                  "web": "price_v2_1.svg"
+                },
+                "visible": true
+              },
+              "validation_rules": []
+            },
+            {
+              "dependency_rules": [],
+              "id": "field_4",
+              "meta": {
+                "component": "paragraph",
+                "default_value": "",
+                "field_name": "likes_count",
+                "listing_attribute_field": false
+              },
+              "ui_rules": {
+                "cds_text_style": "cds_text_style_large",
+                "font_size": "small",
+                "icon_path": {
+                  "android": {
+                    "hdpi": "like_v2_1@hdpi.png",
+                    "mdpi": "like_v2_1@mdpi.png",
+                    "xhdpi": "like_v2_1@xhdpi.png",
+                    "xxhdpi": "like_v2_1@xxhdpi.png",
+                    "xxxhdpi": "like_v2_1@xxxhdpi.png"
+                  },
+                  "ios": {
+                    "2x": "like_v2_1@2x.png",
+                    "3x": "like_v2_1@3x.png"
+                  },
+                  "web": "like_v2_1.svg"
+                },
+                "server_formatting": ["likes_count"],
+                "server_formatting_rules": {
+                  "likes_count": {
+                    "likes_word": "TAG_LIKES_WORD_TEXT"
+                  },
+                  "tags": {
+                    "view_plus_10_times": "TAG_PLUS_10_VIEWS_TEXT",
+                    "view_plus_5_times": "TAG_PLUS_5_VIEWS_TEXT"
+                  }
+                },
+                "visible": true
+              },
+              "validation_rules": []
+            },
+            {
+              "dependency_rules": [],
+              "id": "field_5",
+              "meta": {
+                "component": "paragraph",
+                "default_value": "",
+                "field_name": "condition"
+              },
+              "ui_rules": {
+                "cds_text_style": "cds_text_style_large",
+                "font_size": "small",
+                "hide_if_content_matches": {
+                  "condition": ["0"]
+                },
+                "icon_path": {
+                  "android": {
+                    "hdpi": "condition_v4_1@hdpi.png",
+                    "mdpi": "condition_v4_1@mdpi.png",
+                    "xhdpi": "condition_v4_1@xhdpi.png",
+                    "xxhdpi": "condition_v4_1@xxhdpi.png",
+                    "xxxhdpi": "condition_v4_1@xxxhdpi.png"
+                  },
+                  "ios": {
+                    "2x": "condition_v4_1@2x.png",
+                    "3x": "condition_v4_1@3x.png"
+                  },
+                  "web": "condition_v4_1.svg"
+                },
+                "server_formatting": ["enum", "inline_label"],
+                "server_formatting_rules": {
+                  "enum": {
+                    "1": "TAG_USED_DISPLAY_NAME",
+                    "2": "TAG_NEW_DISPLAY_NAME"
+                  },
+                  "inline_label": {
+                    "label": "TAG_PROPERTY_CONDITION_LABEL"
+                  }
+                },
+                "visible": true
+              },
+              "validation_rules": []
+            },
+            {
+              "dependency_rules": [],
+              "id": "field_6",
+              "meta": {
+                "component": "paragraph",
+                "default_value": "",
+                "field_name": "collection"
+              },
+              "ui_rules": {
+                "cds_text_style": "cds_text_style_large",
+                "font_size": "small",
+                "icon_path": {
+                  "android": {
+                    "hdpi": "category_v2_1@hdpi.png",
+                    "mdpi": "category_v2_1@mdpi.png",
+                    "xhdpi": "category_v2_1@xhdpi.png",
+                    "xxhdpi": "category_v2_1@xxhdpi.png",
+                    "xxxhdpi": "category_v2_1@xxxhdpi.png"
+                  },
+                  "ios": {
+                    "2x": "category_v2_1@2x.png",
+                    "3x": "category_v2_1@3x.png"
+                  },
+                  "web": "category_v2_1.svg"
+                },
+                "server_formatting": ["collection"],
+                "server_formatting_rules": {
+                  "collection": {
+                    "in_word": "TAG_IN_COLLECTION_TEXT"
+                  }
+                },
+                "visible": true
+              },
+              "validation_rules": []
+            },
+            {
+              "dependency_rules": [],
+              "id": "field_7",
+              "meta": {
+                "component": "paragraph",
+                "default_value": "",
+                "field_name": "description"
+              },
+              "ui_rules": {
+                "cds_text_style": "cds_text_style_large",
+                "font_size": "small",
+                "icon_path": {
+                  "android": {
+                    "hdpi": "description_v2_1@hdpi.png",
+                    "mdpi": "description_v2_1@mdpi.png",
+                    "xhdpi": "description_v2_1@xhdpi.png",
+                    "xxhdpi": "description_v2_1@xxhdpi.png",
+                    "xxxhdpi": "description_v2_1@xxxhdpi.png"
+                  },
+                  "ios": {
+                    "2x": "description_v2_1@2x.png",
+                    "3x": "description_v2_1@3x.png"
+                  },
+                  "web": "description_v2_1.svg"
+                },
+                "truncate_content": true,
+                "truncate_text": "read more",
+                "visible": true
+              },
+              "validation_rules": []
+            }
+          ],
+          "id": "group_0",
+          "meta": {
+            "group_name": "everything_group",
+            "visible": true
+          }
+        },
+        {
+          "fields": [
+            {
+              "dependency_rules": [],
+              "id": "field_8",
+              "meta": {
+                "component": "paragraph",
+                "default_value": "",
+                "field_name": "car_type"
+              },
+              "ui_rules": {
+                "align_left": true,
+                "cds_text_style": "cds_text_style_large",
+                "font_size": "small",
+                "top_label": "TAG_CAR_TYPE_LABEL",
+                "visible": true
+              },
+              "validation_rules": []
+            },
+            {
+              "dependency_rules": [],
+              "id": "field_9",
+              "meta": {
+                "component": "paragraph",
+                "default_value": "",
+                "field_name": "driving_options"
+              },
+              "ui_rules": {
+                "align_left": true,
+                "cds_text_style": "cds_text_style_large",
+                "font_size": "small",
+                "top_label": "TAG_DRIVING_OPTIONS_LABEL",
+                "visible": true
+              },
+              "validation_rules": []
+            },
+            {
+              "dependency_rules": [],
+              "id": "field_10",
+              "meta": {
+                "component": "paragraph",
+                "default_value": "",
+                "field_name": "minimum_driving_experience"
+              },
+              "ui_rules": {
+                "align_left": true,
+                "cds_text_style": "cds_text_style_large",
+                "font_size": "small",
+                "top_label": "TAG_MINIMUM_DRIVING_EXPERIENCE_LABEL",
+                "visible": true
+              },
+              "validation_rules": []
+            }
+          ],
+          "id": "group_1",
+          "meta": {
+            "group_name": "car_details_group",
+            "header": "TAG_CAR_DETAILS_GROUP",
+            "visible": true
+          }
+        },
+        {
+          "fields": [
+            {
+              "dependency_rules": [],
+              "id": "field_11",
+              "meta": {
+                "component": "share_options",
+                "field_name": "share_options",
+                "listing_attribute_field": false
+              },
+              "ui_rules": {
+                "server_formatting_rules": {
+                  "buyer_share_text": "TAG_BUYER_SHARE_TEXT",
+                  "seller_share_text": "TAG_SELLER_SHARE_TEXT"
+                },
+                "visible": true
+              },
+              "validation_rules": []
+            }
+          ],
+          "id": "group_2",
+          "meta": {
+            "group_name": "share_group",
+            "header": "TAG_SHARE_LISTING_TEXT",
+            "visible": true
+          }
+        },
+        {
+          "fields": [
+            {
+              "dependency_rules": [],
+              "id": "field_12",
+              "meta": {
+                "component": "seller_info",
+                "field_name": "seller"
+              },
+              "ui_rules": {
+                "feedback_word": "TAG_SELLER_FEEDBACK_TEXT",
+                "joined_word": "TAG_SELLER_JOINED_TEXT",
+                "verified_word": "TAG_SELLER_VERIFIED_TEXT",
+                "visible": true
+              },
+              "validation_rules": []
+            },
+            {
+              "dependency_rules": [],
+              "id": "field_13",
+              "meta": {
+                "component": "feedback_preview",
+                "field_name": "seller_feedback_preview",
+                "listing_attribute_field": false
+              },
+              "ui_rules": {
+                "action": {
+                  "deep_link": "{{{seller_feedback_url}}}",
+                  "type": "go_to_deep_link"
+                },
+                "items": [],
+                "new_seller_word": "TAG_NEW_SELLER_TEXT",
+                "read_all_text": "TAG_READ_ALL_FEEDBACK",
+                "read_more_char_limit": 50,
+                "read_more_text": "TAG_FEEDBACK_READ_MORE_TEXT",
+                "view_seller_reply_text": "TAG_VIEW_SELLER_REPLY_TEXT",
+                "visible": true
+              },
+              "validation_rules": []
+            }
+          ],
+          "id": "group_3",
+          "meta": {
+            "group_name": "seller_info_group",
+            "header": "TAG_SELLER_INFO_TEXT",
+            "visible": true
+          }
+        },
+        {
+          "fields": [
+            {
+              "dependency_rules": [],
+              "id": "field_14",
+              "meta": {
+                "component": "comments",
+                "field_name": "comments",
+                "listing_attribute_field": false
+              },
+              "ui_rules": {
+                "max_visible_comments": 3,
+                "placeholder": "TAG_PUBLIC_COMMENTS_PLACEHOLDER",
+                "post_new_comment_word": "TAG_POST_NEW_COMMENT_TEXT",
+                "view_more_word": "TAG_VIEW_MORE_WORD_TEXT",
+                "visible": true
+              },
+              "validation_rules": []
+            }
+          ],
+          "id": "group_4",
+          "meta": {
+            "group_name": "comments_group",
+            "header": "TAG_PUBLIC_COMMENTS_TEXT",
+            "visible": true
+          }
+        }
+      ],
+      "id": "screen_0",
+      "meta": {
+        "screen_name": "listing_details_screen"
+      },
+      "ui_rules": {
+        "offer_cta_rules": {
+          "boost_text": "TAG_BOOST_TEXT",
+          "buyer_bought_text": "TAG_BUYER_BOUGHT_TEXT",
+          "buyer_chat_text": "TAG_BUYER_CHAT_TEXT",
+          "buyer_make_offer_text": "TAG_BUYER_MAKE_OFFER_TEXT",
+          "buyer_offered_text": "TAG_BUYER_OFFERED_TEXT",
+          "buyer_quick_buy_text": "TAG_BUYER_QUICK_BUY_TEXT",
+          "draft_text": "TAG_DRAFT_TEXT",
+          "expired_text": "TAG_EXPIRED_TEXT",
+          "promote_text": "TAG_PROMOTE_TEXT",
+          "reserved_text": "TAG_RESERVED_TEXT",
+          "seller_listed_text": "TAG_SHARE_LISTED_TEXT",
+          "seller_listed_text_multi": "TAG_SHARE_LISTED_MULTI_TEXT",
+          "sold_text": "TAG_SOLD_TEXT",
+          "view_chat_text": "TAG_VIEW_CHAT_TEXT",
+          "view_chats_text": "TAG_VIEW_CHATS_TEXT"
+        },
+        "server_formatting_rules": {
+          "buyer_share_text": "TAG_BUYER_SHARE_TEXT",
+          "seller_share_text": "TAG_SELLER_SHARE_TEXT"
+        }
+      }
+    }
+  ]
+}

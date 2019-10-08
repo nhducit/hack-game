@@ -1,0 +1,1001 @@
+{
+    "screens": [
+        {
+            "ui_rules": {
+                "cta_direct_contact_enabled": true,
+                "actions": {
+                    "secondary_button": {
+                        "action": "view_offer",
+                        "button_text": "Chat"
+                    },
+                    "primary_button": {
+                        "action": "direct_contact",
+                        "button_text": "Contact"
+                    }
+                }
+            },
+            "meta": {
+                "default_value": {
+                    "accepted_offer_id": null,
+                    "collection": {
+                        "meta_description": "Buy & sell new and preloved cars for sale and more!  Get great deals on your favourite brands or sell the things you no longer need with Carousell.",
+                        "meta_keywords": "Buy and Sell Cars for Sale",
+                        "slug": "cars-for-sale",
+                        "subcategories": [],
+                        "display_name": "Cars for Sale",
+                        "name": "Cars For Sale",
+                        "is_special": false,
+                        "image_urls": {},
+                        "order": 1,
+                        "seo_name": null,
+                        "image_url": "https://media.karousell.com/media/photos/country-collections/2016/08/16/imag_14713230700210.png",
+                        "id": 1173,
+                        "cc_id": 1233
+                    },
+                    "comments_count": 0,
+                    "condition": "1",
+                    "currency_code": "SGD",
+                    "currency_symbol": "S$",
+                    "description": "Sales Contact:\nWilson Tan\ntel:84909152127\n",
+                    "flattened_description": "Depreciation: S$19,188.69\nOriginal Registration Date: 10 Feb 2010\n\nVehicle Info:\nAge: 9 years 3 months\nMileage: 120,000km\nEngine Capacity: 1984cc\nMax Power Output: 207bhp\nPropellant: Petrol\nOff-Peak Car: No\n\nRebate Info:\nCOE Expiry: 09 Feb 2020\nOMV: S$31,874\nARF: S$31,874\nQP Paid (COE): S$23,180\n\nRoad Tax: S$597\nRoad Tax Expiry: 09 Aug 2019\n\nLoan Estimation:\nBased on MAS Guidelines of min 30% downpayment.\nIndustry Interest Rate: 2.98%\nMax Loan Term: 8 months\nMin Downpayment: S$9,000\nEst Monthly Instalment: S$2,677.15\nThese values are estimated for you as a buyer service. Please check with the seller for actual terms.\n\nDescription:\nSales Contact:\nWilson Tan\ntel:84909152127",
+                    "flags": {
+                        "require_mobile_verification": false,
+                        "is_price_drop_bump_eligible": false
+                    },
+                    "has_smart_description": true,
+                    "id": 106852,
+                    "is_p24": false,
+                    "is_popular": false,
+                    "last_modified": "2019-09-11T10:22:56Z",
+                    "like_status": true,
+                    "likes_count": 5,
+                    "location": {
+                        "latitude": 1.28967,
+                        "longitude": 103.85007
+                    },
+                    "location_address": "",
+                    "location_name": "",
+                    "mailing": false,
+                    "mailing_details": "",
+                    "marketplace": {
+                        "id": 1880252,
+                        "country": {
+                            "city_count": 1,
+                            "code": "SG",
+                            "name": "Singapore",
+                            "id": 1880251
+                        },
+                        "name": "Singapore",
+                        "location": {
+                            "latitude": 1.28967,
+                            "longitude": 103.85007
+                        }
+                    },
+                    "meetup": false,
+                    "meetup_details": "",
+                    "meetups": null,
+                    "offer": null,
+                    "offer_count": null,
+                    "photos": [
+                        {
+                            "is_primary": true,
+                            "image_url": "https://media.karousell.com/media/photos/products/2019/05/15/volkswagen_golf_gti_20_tsi_dsg_5dr_auto_1557910179_85638f8d.jpg",
+                            "image": "photos/products/2019/05/15/volkswagen_golf_gti_20_tsi_dsg_5dr_auto_1557910179_85638f8d.jpg",
+                            "id": 171918,
+                            "time_created": "2019-05-15T08:49:39Z",
+                            "image_progressive_url": "https://media.karousell.com/media/photos/products/2019/05/15/volkswagen_golf_gti_20_tsi_dsg_5dr_auto_1557910179_85638f8d_progressive.jpg",
+                            "image_progressive_low_range": 31323,
+                            "image_progressive_medium_range": 71200,
+                            "image_transcode_status": null,
+                            "dash_url": null,
+                            "hls_url": null,
+                            "video_transcode_status": null,
+                            "entity_type": null,
+                            "play_config": null
+                        },
+                        {
+                            "is_primary": false,
+                            "image_url": "https://media.karousell.com/media/photos/products/2019/05/15/volkswagen_golf_gti_20_tsi_dsg_5dr_auto_1557910179_5b3be44f.jpg",
+                            "image": "photos/products/2019/05/15/volkswagen_golf_gti_20_tsi_dsg_5dr_auto_1557910179_5b3be44f.jpg",
+                            "id": 171919,
+                            "time_created": "2019-05-15T08:49:39Z",
+                            "image_progressive_url": "https://media.karousell.com/media/photos/products/2019/05/15/volkswagen_golf_gti_20_tsi_dsg_5dr_auto_1557910179_5b3be44f_progressive.jpg",
+                            "image_progressive_low_range": 77864,
+                            "image_progressive_medium_range": 198608,
+                            "image_transcode_status": null,
+                            "dash_url": null,
+                            "hls_url": null,
+                            "video_transcode_status": null,
+                            "entity_type": null,
+                            "play_config": null
+                        }
+                    ],
+                    "media": [
+                        {
+                            "is_primary": true,
+                            "image_url": "https://media.karousell.com/media/photos/products/2019/05/15/volkswagen_golf_gti_20_tsi_dsg_5dr_auto_1557910179_85638f8d.jpg",
+                            "image": "photos/products/2019/05/15/volkswagen_golf_gti_20_tsi_dsg_5dr_auto_1557910179_85638f8d.jpg",
+                            "id": 171918,
+                            "time_created": "2019-05-15T08:49:39Z",
+                            "image_progressive_url": "https://media.karousell.com/media/photos/products/2019/05/15/volkswagen_golf_gti_20_tsi_dsg_5dr_auto_1557910179_85638f8d_progressive.jpg",
+                            "image_progressive_low_range": 31323,
+                            "image_progressive_medium_range": 71200,
+                            "image_transcode_status": null,
+                            "dash_url": null,
+                            "hls_url": null,
+                            "video_transcode_status": null,
+                            "entity_type": null,
+                            "play_config": null
+                        },
+                        {
+                            "is_primary": false,
+                            "image_url": "https://media.karousell.com/media/photos/products/2019/05/15/volkswagen_golf_gti_20_tsi_dsg_5dr_auto_1557910179_5b3be44f.jpg",
+                            "image": "photos/products/2019/05/15/volkswagen_golf_gti_20_tsi_dsg_5dr_auto_1557910179_5b3be44f.jpg",
+                            "id": 171919,
+                            "time_created": "2019-05-15T08:49:39Z",
+                            "image_progressive_url": "https://media.karousell.com/media/photos/products/2019/05/15/volkswagen_golf_gti_20_tsi_dsg_5dr_auto_1557910179_5b3be44f_progressive.jpg",
+                            "image_progressive_low_range": 77864,
+                            "image_progressive_medium_range": 198608,
+                            "image_transcode_status": null,
+                            "dash_url": null,
+                            "hls_url": null,
+                            "video_transcode_status": null,
+                            "entity_type": null,
+                            "play_config": null
+                        }
+                    ],
+                    "price": "30000.00",
+                    "original_price": "30000.00",
+                    "discount_price": null,
+                    "price_formatted": "30,000",
+                    "price_suggestion": {
+                        "display_price": "24000",
+                        "eligible_price": "27000"
+                    },
+                    "seller": {
+                        "username": "caarlyauto",
+                        "id": 19,
+                        "profile": {
+                            "image_url": "https://media.karousell.com/media/photos/profiles/2019/07/08/caarlyauto_1562568947.jpg",
+                            "image": "photos/profiles/2019/07/08/caarlyauto_1562568947.jpg",
+                            "image_progressive_url": "https://media.karousell.com/media/photos/profiles/2019/07/08/caarlyauto_1562568947_progressive.jpg",
+                            "image_progressive_low_range": 1048,
+                            "image_progressive_medium_range": 1897,
+                            "verification_type": "VE",
+                            "is_facebook_verified": false,
+                            "is_email_verified": true,
+                            "is_gplus_verified": false,
+                            "affiliate_name": "cm",
+                            "is_mobile_verified": false,
+                            "is_affiliate": true,
+                            "marketplace": {
+                                "id": 1880252,
+                                "name": "Singapore",
+                                "location": {
+                                    "latitude": 1.28967,
+                                    "longitude": 103.85007
+                                },
+                                "region": null,
+                                "country": {
+                                    "id": 1880251,
+                                    "code": "SG",
+                                    "name": "Singapore"
+                                }
+                            },
+                            "is_id_verified": false
+                        },
+                        "followers_count": 10,
+                        "following_count": 0,
+                        "follow_status": false,
+                        "products_count": 2127,
+                        "last_name": "",
+                        "first_name": "Caarly 2",
+                        "blocked": true,
+                        "is_suspended": false,
+                        "positive_reviews_count": 0,
+                        "neutral_reviews_count": 0,
+                        "reviews": null,
+                        "has_more_reviews": null,
+                        "is_new_seller": null,
+                        "negative_reviews_count": 0,
+                        "date_joined": "2016-09-22T09:43:48Z",
+                        "response_rate": "X",
+                        "feedback_score": null,
+                        "feedback_count": null
+                    },
+                    "source": "CD",
+                    "status": "L",
+                    "status_updated": null,
+                    "subscribed": false,
+                    "time_created": "2019-05-15T08:49:38Z",
+                    "title": "Volkswagen Golf GTI 2.0 TSI DSG 5-Dr Auto",
+                    "user_state": null,
+                    "expiry_date": null,
+                    "enabled_shipping": []
+                },
+                "share_text": "Volkswagen Golf GTI 2.0 TSI DSG 5-Dr Auto for S$30,000 https://sg.carousell.com/p/106852",
+                "screen_name": "listing_details_screen"
+            },
+            "id": "screen_0",
+            "groups": [
+                {
+                    "fields": [
+                        {
+                            "validation_rules": [],
+                            "ui_rules": {
+                                "title": "Volkswagen Golf GTI 2.0 TSI DSG 5-Dr Auto",
+                                "visible": true,
+                                "formatting": {},
+                                "paragraphs": [
+                                    {
+                                        "text": "S$19,189 depre.",
+                                        "icon": "https://storage.googleapis.com/carousell-sl/components/ico_depre_v2@3x.png"
+                                    },
+                                    {
+                                        "text": "120,000 km",
+                                        "icon": "https://storage.googleapis.com/carousell-sl/components/ico_mileage_v2@3x.png"
+                                    },
+                                    {
+                                        "text": "10 Feb 2010 (9 yrs 3 mths)",
+                                        "icon": "https://storage.googleapis.com/carousell-sl/components/ico_date@3x.png"
+                                    },
+                                    {
+                                        "text": "S$2,677/mth",
+                                        "icon": "https://storage.googleapis.com/carousell-sl/components/ico_downpay@3x.png"
+                                    }
+                                ],
+                                "seller_image": "https://media.karousell.com/media/photos/profiles/2019/07/08/caarlyauto_1562568947.jpg"
+                            },
+                            "meta": {
+                                "default_value": [
+                                    {
+                                        "is_primary": true,
+                                        "image_url": "https://media.karousell.com/media/photos/products/2019/05/15/volkswagen_golf_gti_20_tsi_dsg_5dr_auto_1557910179_85638f8d.jpg",
+                                        "image": "photos/products/2019/05/15/volkswagen_golf_gti_20_tsi_dsg_5dr_auto_1557910179_85638f8d.jpg",
+                                        "id": 171918,
+                                        "time_created": "2019-05-15T08:49:39Z",
+                                        "image_progressive_url": "https://media.karousell.com/media/photos/products/2019/05/15/volkswagen_golf_gti_20_tsi_dsg_5dr_auto_1557910179_85638f8d_progressive.jpg",
+                                        "image_progressive_low_range": 31323,
+                                        "image_progressive_medium_range": 71200,
+                                        "image_transcode_status": null,
+                                        "dash_url": null,
+                                        "hls_url": null,
+                                        "video_transcode_status": null,
+                                        "entity_type": null,
+                                        "play_config": null
+                                    },
+                                    {
+                                        "is_primary": false,
+                                        "image_url": "https://media.karousell.com/media/photos/products/2019/05/15/volkswagen_golf_gti_20_tsi_dsg_5dr_auto_1557910179_5b3be44f.jpg",
+                                        "image": "photos/products/2019/05/15/volkswagen_golf_gti_20_tsi_dsg_5dr_auto_1557910179_5b3be44f.jpg",
+                                        "id": 171919,
+                                        "time_created": "2019-05-15T08:49:39Z",
+                                        "image_progressive_url": "https://media.karousell.com/media/photos/products/2019/05/15/volkswagen_golf_gti_20_tsi_dsg_5dr_auto_1557910179_5b3be44f_progressive.jpg",
+                                        "image_progressive_low_range": 77864,
+                                        "image_progressive_medium_range": 198608,
+                                        "image_transcode_status": null,
+                                        "dash_url": null,
+                                        "hls_url": null,
+                                        "video_transcode_status": null,
+                                        "entity_type": null,
+                                        "play_config": null
+                                    }
+                                ],
+                                "field_name": "photos",
+                                "component": "photo_viewer"
+                            },
+                            "id": "field_0",
+                            "dependency_rules": []
+                        },
+                        {
+                            "__TYPE__": "sfs.FieldListingDetailTag",
+                            "ui_rules": {
+                                "visible": true,
+                                "formatting": {}
+                            },
+                            "meta": {
+                                "default_value": [
+                                    {
+                                        "description": "Short explaination about the attribute or service here.",
+                                        "icon": {
+                                            "base_cdn_url": "https://sl3-cdn.karousell.com/components/",
+                                            "android": {
+                                                "xhdpi": "p24_icon@xhdpi.png",
+                                                "hdpi": "p24_icon@hdpi.png",
+                                                "xxxhdpi": "p24_icon@xxxhdpi.png",
+                                                "xxhdpi": "p24_icon@xxhdpi.png",
+                                                "mdpi": "p24_icon@mdpi.png"
+                                            },
+                                            "ios": {
+                                                "3x": "p24_icon@3x.png",
+                                                "2x": "p24_icon@2x.png"
+                                            },
+                                            "web": "p24_icon.svg"
+                                        },
+                                        "id": "renewed_coe",
+                                        "label": "Renewed COE"
+                                    },
+                                    {
+                                        "description": "Get your loan approved instantly.",
+                                        "icon": {
+                                            "base_cdn_url": "https://sl3-cdn.karousell.com/components/",
+                                            "android": {
+                                                "xhdpi": "p24_icon@xhdpi.png",
+                                                "hdpi": "p24_icon@hdpi.png",
+                                                "xxxhdpi": "p24_icon@xxxhdpi.png",
+                                                "xxhdpi": "p24_icon@xxhdpi.png",
+                                                "mdpi": "p24_icon@mdpi.png"
+                                            },
+                                            "ios": {
+                                                "3x": "p24_icon@3x.png",
+                                                "2x": "p24_icon@2x.png"
+                                            },
+                                            "web": "p24_icon.svg"
+                                        },
+                                        "id": "loan_approved",
+                                        "label": "Loan Approved"
+                                    }
+                                ],
+                                "field_name": "listing_detail_tags",
+                                "component": "service_tags"
+                            },
+                            "validation_rules": [],
+                            "id": "field_1",
+                            "dependency_rules": []
+                        },
+                        {
+                            "validation_rules": [],
+                            "ui_rules": {
+                                "visible": true,
+                                "align_left": true,
+                                "font_size": "large",
+                                "cds_text_style": "cds_text_style_title_3",
+                                "formatting": {}
+                            },
+                            "meta": {
+                                "default_value": "Volkswagen Golf GTI 2.0 TSI DSG 5-Dr Auto",
+                                "field_name": "title",
+                                "component": "paragraph"
+                            },
+                            "id": "field_3",
+                            "dependency_rules": []
+                        },
+                        {
+                            "validation_rules": [],
+                            "ui_rules": {
+                                "font_color": "urbanGrey90",
+                                "align_left": true,
+                                "formatting": {},
+                                "cds_text_style": "cds_text_style_title_2",
+                                "visible": true
+                            },
+                            "meta": {
+                                "default_value": "S$30,000",
+                                "field_name": "price",
+                                "component": "paragraph"
+                            },
+                            "id": "field_4",
+                            "dependency_rules": []
+                        },
+                        {
+                            "validation_rules": [],
+                            "ui_rules": {
+                                "visible": true,
+                                "icon_path": {
+                                    "web": "depreciation.svg",
+                                    "android": {
+                                        "xhdpi": "depreciation@xhdpi.png",
+                                        "hdpi": "depreciation@hdpi.png",
+                                        "xxxhdpi": "depreciation@xxxhdpi.png",
+                                        "xxhdpi": "depreciation@xxhdpi.png",
+                                        "mdpi": "depreciation@mdpi.png"
+                                    },
+                                    "ios": {
+                                        "3x": "depreciation@3x.png",
+                                        "2x": "depreciation@2x.png"
+                                    }
+                                },
+                                "formatting": {},
+                                "font_size": "small",
+                                "cds_text_style": "cds_text_style_large"
+                            },
+                            "meta": {
+                                "default_value": "S$19,188 / year",
+                                "field_name": "depreciation_per_year",
+                                "component": "paragraph"
+                            },
+                            "id": "field_5",
+                            "dependency_rules": []
+                        },
+                        {
+                            "validation_rules": [],
+                            "ui_rules": {
+                                "visible": true,
+                                "icon_path": {
+                                    "web": "calendar.svg",
+                                    "android": {
+                                        "xhdpi": "calendar@xhdpi.png",
+                                        "hdpi": "calendar@hdpi.png",
+                                        "xxxhdpi": "calendar@xxxhdpi.png",
+                                        "xxhdpi": "calendar@xxhdpi.png",
+                                        "mdpi": "calendar@mdpi.png"
+                                    },
+                                    "ios": {
+                                        "3x": "calendar@3x.png",
+                                        "2x": "calendar@2x.png"
+                                    }
+                                },
+                                "formatting": {},
+                                "font_size": "small",
+                                "cds_text_style": "cds_text_style_large"
+                            },
+                            "meta": {
+                                "default_value": "9 years 3 months (4 months left)",
+                                "field_name": "vehicle_age_remaining_coe",
+                                "component": "paragraph"
+                            },
+                            "id": "field_6",
+                            "dependency_rules": []
+                        },
+                        {
+                            "validation_rules": [],
+                            "ui_rules": {
+                                "visible": true,
+                                "icon_path": {
+                                    "web": "mileage.svg",
+                                    "android": {
+                                        "xhdpi": "mileage@xhdpi.png",
+                                        "hdpi": "mileage@hdpi.png",
+                                        "xxxhdpi": "mileage@xxxhdpi.png",
+                                        "xxhdpi": "mileage@xxhdpi.png",
+                                        "mdpi": "mileage@mdpi.png"
+                                    },
+                                    "ios": {
+                                        "3x": "mileage@3x.png",
+                                        "2x": "mileage@2x.png"
+                                    }
+                                },
+                                "formatting": {},
+                                "font_size": "small",
+                                "cds_text_style": "cds_text_style_large"
+                            },
+                            "meta": {
+                                "default_value": "120,000km",
+                                "field_name": "mile_age_owner_count",
+                                "component": "paragraph"
+                            },
+                            "id": "field_7",
+                            "dependency_rules": []
+                        },
+                        {
+                            "validation_rules": [],
+                            "ui_rules": {
+                                "font_size": "small",
+                                "icon_path": {
+                                    "web": "category_v2_1.svg",
+                                    "android": {
+                                        "xhdpi": "category_v2_1@xhdpi.png",
+                                        "hdpi": "category_v2_1@hdpi.png",
+                                        "xxxhdpi": "category_v2_1@xxxhdpi.png",
+                                        "xxhdpi": "category_v2_1@xxhdpi.png",
+                                        "mdpi": "category_v2_1@mdpi.png"
+                                    },
+                                    "ios": {
+                                        "3x": "category_v2_1@3x.png",
+                                        "2x": "category_v2_1@2x.png"
+                                    }
+                                },
+                                "visible": true,
+                                "formatting": {
+                                    "{{{Cars For Sale}}}": {
+                                        "link": "https://carousell.com/categories/cars-for-sale-1173",
+                                        "type": "link",
+                                        "text": "Cars For Sale"
+                                    }
+                                },
+                                "cds_text_style": "cds_text_style_large"
+                            },
+                            "meta": {
+                                "default_value": "In {{{Cars For Sale}}}",
+                                "field_name": "collection",
+                                "component": "paragraph"
+                            },
+                            "id": "field_8",
+                            "dependency_rules": []
+                        },
+                        {
+                            "validation_rules": [],
+                            "ui_rules": {
+                                "font_size": "small",
+                                "icon_path": {
+                                    "web": "like_v2_1.svg",
+                                    "android": {
+                                        "xhdpi": "like_v2_1@xhdpi.png",
+                                        "hdpi": "like_v2_1@hdpi.png",
+                                        "xxxhdpi": "like_v2_1@xxxhdpi.png",
+                                        "xxhdpi": "like_v2_1@xxhdpi.png",
+                                        "mdpi": "like_v2_1@mdpi.png"
+                                    },
+                                    "ios": {
+                                        "3x": "like_v2_1@3x.png",
+                                        "2x": "like_v2_1@2x.png"
+                                    }
+                                },
+                                "visible": true,
+                                "formatting": {},
+                                "cds_text_style": "cds_text_style_large"
+                            },
+                            "meta": {
+                                "default_value": "Viewed 5+ times today",
+                                "field_name": "likes_count",
+                                "component": "paragraph"
+                            },
+                            "id": "field_9",
+                            "dependency_rules": []
+                        }
+                    ],
+                    "ui_rules": {},
+                    "meta": {
+                        "group_name": "everything_group"
+                    },
+                    "id": "group_0"
+                },
+                {
+                    "fields": [
+                        {
+                            "validation_rules": [],
+                            "ui_rules": {
+                                "description": "Read more {{{terms and conditions}}}",
+                                "cta_button_text": "Apply UOB car loan",
+                                "visible": true,
+                                "formatting": {
+                                    "{{{terms and conditions}}}": {
+                                        "text": "terms and conditions",
+                                        "link": "https://caro.sl/uobcarloan?webview_version=v2&web_only=true",
+                                        "open_in_new_tab": true,
+                                        "type": "link"
+                                    }
+                                },
+                                "provider": {
+                                    "icon_path": {
+                                        "base_cdn_url": "https://sl3-cdn.karousell.com/components/",
+                                        "android": {
+                                            "xhdpi": "uob_logo@xhdpi.png",
+                                            "hdpi": "uob_logo@hdpi.png",
+                                            "xxxhdpi": "uob_logo@xxxhdpi.png",
+                                            "xxhdpi": "uob_logo@xxhdpi.png",
+                                            "mdpi": "uob_logo@mdpi.png"
+                                        },
+                                        "ios": {
+                                            "3x": "uob_logo@3x.png",
+                                            "2x": "uob_logo@2x.png"
+                                        },
+                                        "web": "uob_logo.svg"
+                                    }
+                                },
+                                "action": {
+                                    "type": "go_to_deep_link",
+                                    "deep_link": "carousell://deep_link"
+                                }
+                            },
+                            "meta": {
+                                "default_value": {
+                                    "sale_price": 30000.0,
+                                    "interest_rate": {
+                                        "default": 0.0298,
+                                        "max": 0.05,
+                                        "min": 0
+                                    },
+                                    "loan_amount": {
+                                        "default": 0.7,
+                                        "max": 0.7,
+                                        "min": 0
+                                    },
+                                    "period": {
+                                        "default": 4,
+                                        "max": 84,
+                                        "min": 12
+                                    }
+                                },
+                                "field_name": "loan_calculator",
+                                "component": "loan_calculator"
+                            },
+                            "id": "field_10",
+                            "dependency_rules": []
+                        }
+                    ],
+                    "ui_rules": {},
+                    "meta": {
+                        "header": "Loan Estimation",
+                        "group_name": "loan_calculator_group"
+                    },
+                    "id": "group_1"
+                },
+                {
+                    "fields": [
+                        {
+                            "validation_rules": [],
+                            "ui_rules": {
+                                "visible": true
+                            },
+                            "meta": {
+                                "default_value": {
+                                    "items": [
+                                        {
+                                            "action": {
+                                                "deep_link": "https://carousell.com/generic?api_path=%2Fvs%2F1.0%2Faxa_quote%2Fget_form%2F&refer=car_listing_detail",
+                                                "type": "go_to_deep_link"
+                                            },
+                                            "icon_path": {
+                                                "base_cdn_url": "https://sl3-cdn.karousell.com/components/",
+                                                "android": {
+                                                    "xhdpi": "axa@xhdpi.png",
+                                                    "hdpi": "axa@hdpi.png",
+                                                    "xxxhdpi": "axa@xxxhdpi.png",
+                                                    "xxhdpi": "axa@xxhdpi.png",
+                                                    "mdpi": "axa@mdpi.png"
+                                                },
+                                                "ios": {
+                                                    "3x": "axa@3x.png",
+                                                    "2x": "axa@2x.png"
+                                                },
+                                                "web": "axa.svg"
+                                            },
+                                            "id": "",
+                                            "button_text": "Get AXA Insurance",
+                                            "title": "Insure this vehicle with AXA. Premiums start from S$504.57"
+                                        }
+                                    ]
+                                },
+                                "field_name": "smart_axa_quickquote_v2",
+                                "component": "paragraph_buttons"
+                            },
+                            "id": "field_11",
+                            "dependency_rules": []
+                        }
+                    ],
+                    "ui_rules": {},
+                    "meta": {
+                        "header": "Insurance",
+                        "group_name": "axa_quickquote_group",
+                        "footer": ""
+                    },
+                    "id": "group_2"
+                },
+                {
+                    "fields": [
+                        {
+                            "__TYPE__": "sfs.FieldInfoCard",
+                            "ui_rules": {
+                                "bottom_separator_visible": false,
+                                "scroll_enabled": false,
+                                "font_size": "title",
+                                "description": "",
+                                "title": "",
+                                "items": [
+                                    {
+                                        "header": "OMV",
+                                        "text": "S$31,874"
+                                    },
+                                    {
+                                        "header": "ARF",
+                                        "text": "S$31,874"
+                                    },
+                                    {
+                                        "header": "QP Paid (COE)",
+                                        "text": "S$23,180"
+                                    },
+                                    {
+                                        "header": "COE Expiry",
+                                        "text": "09 Feb 2020"
+                                    },
+                                    {
+                                        "header": "Road Tax",
+                                        "text": "S$597"
+                                    },
+                                    {
+                                        "header": "Road Tax Expiry",
+                                        "text": "09 Aug 2019"
+                                    }
+                                ],
+                                "visible": true,
+                                "font_weight": "bold",
+                                "formatting": {},
+                                "top_separator_visible": false
+                            },
+                            "meta": {
+                                "default_value": null,
+                                "field_name": "financial_info",
+                                "component": "info_card"
+                            },
+                            "validation_rules": [],
+                            "id": "field_12",
+                            "dependency_rules": []
+                        }
+                    ],
+                    "ui_rules": {
+                        "footer_visible": false,
+                        "group_action": {
+                            "action": {
+                                "type": "dialog",
+                                "subtitle": "OMV: Open Market Value is the cost of a vehicle imported into Singapore.\n\nARF: Additional Registration Fees is a tax imposed when the vehicle is registered in Singapore.\n\nQP Paid: Quota Premium Paid refers to the price of the Certificate of Entitlement (COE) that has been paid during the registration of the vehicle.",
+                                "title": "What are OMV, ARF, QP Paid?"
+                            },
+                            "image_url": "https://sl3-cdn.karousell.com/components/help@3x.png",
+                            "label": "What is a tenure?"
+                        }
+                    },
+                    "meta": {
+                        "header": "Financials",
+                        "visible": true,
+                        "group_name": "registration_info"
+                    },
+                    "id": "group_3"
+                },
+                {
+                    "fields": [
+                        {
+                            "__TYPE__": "sfs.FieldInfoCard",
+                            "ui_rules": {
+                                "bottom_separator_visible": false,
+                                "scroll_enabled": false,
+                                "font_size": "title",
+                                "description": "",
+                                "title": "",
+                                "items": [
+                                    {
+                                        "header": "Engine Capacity",
+                                        "text": "1984 cc"
+                                    },
+                                    {
+                                        "header": "Transmission",
+                                        "text": "Auto"
+                                    },
+                                    {
+                                        "header": "Max Power output",
+                                        "text": "207 bhp"
+                                    },
+                                    {
+                                        "header": "Propellant",
+                                        "text": "Petrol"
+                                    }
+                                ],
+                                "visible": true,
+                                "font_weight": "bold",
+                                "formatting": {},
+                                "top_separator_visible": false
+                            },
+                            "meta": {
+                                "default_value": null,
+                                "field_name": "specification_info",
+                                "component": "info_card"
+                            },
+                            "validation_rules": [],
+                            "id": "field_13",
+                            "dependency_rules": []
+                        }
+                    ],
+                    "ui_rules": {
+                        "footer_visible": false
+                    },
+                    "meta": {
+                        "header": "Specifications",
+                        "group_name": "registration_info"
+                    },
+                    "id": "group_4"
+                },
+                {
+                    "fields": [
+                        {
+                            "validation_rules": [],
+                            "ui_rules": {
+                                "font_size": "small",
+                                "truncate_text": "read more",
+                                "icon_path": {
+                                    "web": "description_v2_1.svg",
+                                    "android": {
+                                        "xhdpi": "description_v2_1@xhdpi.png",
+                                        "hdpi": "description_v2_1@hdpi.png",
+                                        "xxxhdpi": "description_v2_1@xxxhdpi.png",
+                                        "xxhdpi": "description_v2_1@xxhdpi.png",
+                                        "mdpi": "description_v2_1@mdpi.png"
+                                    },
+                                    "ios": {
+                                        "3x": "description_v2_1@3x.png",
+                                        "2x": "description_v2_1@2x.png"
+                                    }
+                                },
+                                "visible": true,
+                                "formatting": {},
+                                "truncate_content": true,
+                                "cds_text_style": "cds_text_style_large"
+                            },
+                            "meta": {
+                                "default_value": "Sales Contact:\nWilson Tan\ntel:84909152127\n",
+                                "field_name": "description",
+                                "component": "paragraph"
+                            },
+                            "id": "field_14",
+                            "dependency_rules": []
+                        }
+                    ],
+                    "ui_rules": {},
+                    "meta": {
+                        "group_name": "description_group"
+                    },
+                    "id": "group_5"
+                },
+                {
+                    "fields": [
+                        {
+                            "validation_rules": [],
+                            "ui_rules": {
+                                "joined_word": "Joined ",
+                                "formatting": {},
+                                "feedback_word": "Feedback",
+                                "verified_word": "Verified",
+                                "visible": true
+                            },
+                            "meta": {
+                                "default_value": {
+                                    "feedback_score": null,
+                                    "username": "caarlyauto",
+                                    "is_new_seller": null,
+                                    "feedback_count": null,
+                                    "is_mobile_verified": false,
+                                    "is_official_partner": false,
+                                    "negative_reviews_count": 0,
+                                    "positive_reviews_count": 0,
+                                    "verification_type": "VE",
+                                    "is_gplus_verified": false,
+                                    "is_id_verified": false,
+                                    "is_facebook_verified": false,
+                                    "profile_picture": "https://media.karousell.com/media/photos/profiles/2019/07/08/caarlyauto_1562568947.jpg",
+                                    "is_email_verified": true,
+                                    "neutral_reviews_count": 0,
+                                    "response_rate": "X",
+                                    "id": 19,
+                                    "date_joined": "2 years ago"
+                                },
+                                "field_name": "seller",
+                                "component": "seller_info"
+                            },
+                            "id": "field_16",
+                            "dependency_rules": []
+                        }
+                    ],
+                    "ui_rules": {},
+                    "meta": {
+                        "header": "Meet The Seller",
+                        "group_name": "seller_info_group"
+                    },
+                    "id": "group_6"
+                },
+                {
+                    "fields": [
+                        {
+                            "validation_rules": [],
+                            "ui_rules": {
+                                "post_new_comment_word": "Post a New Comment",
+                                "visible": true,
+                                "formatting": {},
+                                "show_view_more": false,
+                                "max_visible_comments": 3,
+                                "placeholder": "Be the first to write a public comment. Ask a question or @mention a friend to check this out!",
+                                "view_more_word": "View Earlier Comments"
+                            },
+                            "meta": {
+                                "default_value": {
+                                    "seller_id": 19,
+                                    "subscribed": false,
+                                    "comments": []
+                                },
+                                "field_name": "comments",
+                                "component": "comments"
+                            },
+                            "id": "field_18",
+                            "dependency_rules": []
+                        }
+                    ],
+                    "ui_rules": {},
+                    "meta": {
+                        "header": "Public Comments",
+                        "group_name": "comments_group"
+                    },
+                    "id": "group_7"
+                },
+                {
+                    "fields": [
+                        {
+                            "validation_rules": [],
+                            "ui_rules": {
+                                "visible": true,
+                                "direction": "vertical",
+                                "formatting": {}
+                            },
+                            "meta": {
+                                "default_value": {
+                                    "items": [
+                                        {
+                                            "style": {
+                                                "shadow_enabled": true,
+                                                "border_color": "#FFFFFF",
+                                                "background_color": "#FFFFFF"
+                                            },
+                                            "subtitle": "Visit Auto Home and explore all available services in your palm.",
+                                            "title": "Carousell Services",
+                                            "icon_path": {
+                                                "base_cdn_url": "https://sl3-cdn.karousell.com/homescreens/",
+                                                "android": {
+                                                    "xhdpi": "axa@xhdpi.png",
+                                                    "hdpi": "axa@hdpi.png",
+                                                    "xxxhdpi": "axa@xxxhdpi.png",
+                                                    "xxhdpi": "axa@xxhdpi.png",
+                                                    "mdpi": "axa@mdpi.png"
+                                                },
+                                                "ios": {
+                                                    "3x": "axa@3x.png",
+                                                    "2x": "axa@2x.png"
+                                                }
+                                            },
+                                            "action": {
+                                                "type": "go_to_deep_link",
+                                                "deep_link": "https://carousell.com/smart_form/axa_enquiry/?journey=form&prefill_contact_reason=Car+Insurance+Quote"
+                                            },
+                                            "id": "axa_motorcar_insurance"
+                                        },
+                                        {
+                                            "style": {
+                                                "shadow_enabled": true,
+                                                "border_color": "#FFFFFF",
+                                                "background_color": "#FFFFFF"
+                                            },
+                                            "subtitle": "Sell your car within 24 hours to our trusted dealers.",
+                                            "title": "SwiftQuote",
+                                            "icon_path": {
+                                                "base_cdn_url": "https://sl3-cdn.karousell.com/homescreens/cars_22/",
+                                                "android": {
+                                                    "xhdpi": "swiftcode_hero_rebranding@xhdpi.png",
+                                                    "hdpi": "swiftcode_hero_rebranding@hdpi.png",
+                                                    "xxxhdpi": "swiftcode_hero_rebranding@xxxhdpi.png",
+                                                    "xxhdpi": "swiftcode_hero_rebranding@xxhdpi.png",
+                                                    "mdpi": "swiftcode_hero_rebranding@mdpi.png"
+                                                },
+                                                "ios": {
+                                                    "3x": "swiftcode_hero_rebranding@3x.png",
+                                                    "2x": "swiftcode_hero_rebranding@2x.png"
+                                                },
+                                                "web": "swiftcode_hero_rebranding.svg"
+                                            },
+                                            "action": {
+                                                "type": "go_to_deep_link",
+                                                "deep_link": "https://carousell.com/smart_form/sq_trade_in/?journey=form&prefill_source=Sell+Car"
+                                            },
+                                            "id": "swiftquote_more_tab"
+                                        }
+                                    ]
+                                },
+                                "component": "hero_promotion"
+                            },
+                            "id": "field_19",
+                            "dependency_rules": []
+                        }
+                    ],
+                    "ui_rules": {
+                        "theme": "white",
+                        "footer_visible": false
+                    },
+                    "meta": {
+                        "header": "Related services",
+                        "group_name": "hero_promotion_promo_group"
+                    },
+                    "id": "group_8"
+                }
+            ]
+        }
+    ],
+    "meta": {
+        "base_cdn_url": "https://sl3-cdn.karousell.com/components/"
+    },
+    "id": "b81ff0d3-aa0a-459e-910a-44fffa50930f"
+}
