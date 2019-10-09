@@ -2,6 +2,7 @@ import React from "react";
 import Wrapper from "../../components/wrapPage";
 import { images } from "../../assets";
 import { withRouter } from "next/router";
+import Head from "next/head";
 
 class Landing extends React.Component {
   constructor(props) {
@@ -23,6 +24,14 @@ class Landing extends React.Component {
         backgroundPosition: "center"
       }}
     >
+      <Head>
+        {Object.keys(images).map(imageLink => {
+          console.log("image", images[imageLink]());
+          return (
+            <link rel="preload" href={images[imageLink]()} as="image"></link>
+          );
+        })}
+      </Head>
       <img
         style={{
           width: "150px",

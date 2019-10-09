@@ -10,7 +10,6 @@ import GridLayout from "../../components/gridLayout";
 import { images } from "../../assets";
 import { withRouter } from "next/router";
 import TimeUp from "../../components/TimeUp";
-
 import "../../styles/global-index.css";
 const Point = posed.div({
   visible: {
@@ -43,6 +42,7 @@ class Game extends React.Component {
   componentDidMount = () => {
     const { level } = this.props;
     this.setupLevel({ level: level });
+    console.log("images", images);
   };
 
   setupLevel = ({ level }) => {
