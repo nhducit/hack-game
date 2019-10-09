@@ -8,8 +8,8 @@ const user = {
 };
 
 const rules = {
-  bomb: -10,
-  failed: -5,
+  bomb: -30,
+  failed: -10,
   speed: 5,
   flip: 100
 };

@@ -17,7 +17,7 @@ export default ({ bg, children }) => (
         alignItems: "center",
         width: "375px",
         height: "100vh",
-        minHeight: "667px",
+        minHeight: "603px",
         backgroundImage: `url(${bg})`,
         backgroundSize: "cover"
       }}

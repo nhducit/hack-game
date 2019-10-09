@@ -3,6 +3,7 @@ import Wrapper from "../../components/wrapPage";
 import { images } from "../../assets";
 import Card from "../../components/card";
 import { withRouter } from "next/router";
+import { user } from "../../utils/gamePlay";
 
 class Claim extends React.Component {
   state = {
@@ -55,6 +56,7 @@ class Claim extends React.Component {
         >
           <button
             onClick={() => {
+              user.point = 0;
               this.props.router.push("/game");
             }}
             style={{

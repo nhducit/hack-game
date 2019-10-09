@@ -11,22 +11,28 @@ class GameHeader extends React.Component {
     const timeOver = this.props.timeOver;
 
     return (
-      <div className="Header">
-        <div className="HeaderLeft">
-          <img
-            className="Oval"
-            src="./avatar.png"
-            alt="avatar"
-            width="40px"
-            height="40px"
-          />
-          <div className="Score">{score}</div>
-        </div>
-        <div style={{ flex: 1, backgroundColor: "green" }}></div>
-        <div className="HeaderRight">
-          <div className="Level">L{level}</div>
-          <Countdown then={then} timeOver={timeOver} />
-        </div>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          padding: "16px 8px",
+          alignItems: "center",
+          width: "100%"
+        }}
+      >
+        <img
+          className="Oval"
+          src="./avatar.png"
+          alt="avatar"
+          width="40px"
+          height="40px"
+        />
+        <div className="Score">{score}</div>
+        <div
+          style={{ flex: 1, backgroundColor: "green", display: "flex" }}
+        ></div>
+        <div className="Level">L{level}</div>
+        <Countdown then={then} timeOver={timeOver} />
       </div>
     );
   }

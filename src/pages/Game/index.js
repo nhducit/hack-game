@@ -206,7 +206,7 @@ class Game extends React.Component {
   toNextLevel = () => {
     let nextLevel = this.state.level + 1;
     const { then } = this.state;
-    const remainingTime = then.seconds() - new Date().getSeconds();
+    const remainingTime = then.diff(moment(), "seconds");
     const point = remainingTime * rules.speed;
     this.appendPoint({ type: "speed", value: Math.max(0, point) });
 

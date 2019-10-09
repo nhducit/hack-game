@@ -38,6 +38,9 @@
   margin-right: 16px;
   margin-top: 16px;
   margin-bottom: 16px;
+  flex-direction: "row";
+  background-color: red;
+  width: "100%";
 }
 
 .HeaderLeft {
