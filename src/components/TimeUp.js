@@ -46,7 +46,6 @@ class TimeUp extends React.Component {
         </div>
         <div
           style={{
-            width: "152px",
             height: "26px",
 
             fontSize: "20px",
