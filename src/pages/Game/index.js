@@ -1,9 +1,9 @@
 import Head from "next/head";
 import React from "react";
 import posed from "react-pose";
-import { generate, numOfLevel } from "./levelGenerator";
+import { generate, numOfLevel } from "../../utils/levelGenerator";
 import GameHeader from "../../components/GameHeader";
-import { user, rules } from "../gamePlay";
+import { user, rules } from "../../utils/gamePlay";
 import moment from "moment";
 import Wrapper from "../../components/wrapPage";
 

@@ -1,7 +1,7 @@
 import React from "react";
 import Wrapper from "../../components/wrapPage";
 import { images } from "../../assets";
-import { user } from "../gamePlay";
+import { user } from "../../utils/gamePlay";
 import { withRouter } from "next/router";
 
 const Item = ({ rank, img, name, maxLevel, point, isSelected, onClick }) => (
