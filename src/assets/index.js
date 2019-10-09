@@ -23,6 +23,7 @@ const images = {
   cardTyre: () => require("./images/card_tyre.png"),
   collectButton: () => require("./images/btn_collect.png"),
   catAvatar: () => require("./images/cat.png"),
+  objClock: () => require("./images/obj_clock.png"),
   prize01: () => require("./images/prize_01.png"),
   prize02: () => require("./images/prize_02.png"),
   prize03: () => require("./images/prize_03.png"),
