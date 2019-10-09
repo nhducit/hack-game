@@ -6,9 +6,7 @@ import GameHeader from "../../components/GameHeader";
 import { user, rules } from "../gamePlay";
 import moment from "moment";
 import Wrapper from "../../components/wrapPage";
-
 import GridLayout from "../../components/gridLayout";
-
 import { images } from "../../assets";
 
 const Point = posed.div({
