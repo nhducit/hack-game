@@ -167,6 +167,8 @@ class Game extends React.Component {
       } else {
         this.appendPoint({ value: rules.failed, type: "failed" });
       }
+      this.onFlipCard({ index: keys[0] });
+      this.onFlipCard({ index: keys[1] });
       return;
     }
 
@@ -187,13 +189,13 @@ class Game extends React.Component {
       this.checkCards();
       setTimeout(() => {
         this.onFlipTimeOut({ index });
-      }, 1000);
+      }, 2000);
     }
   };
 
   onFlipTimeOut = ({ index }) => {
-    const { cards } = this.state;
-    if (cards[index].marked) {
+    const { cards, openedCards } = this.state;
+    if (cards[index].marked && !openedCards[index]) {
       return;
     }
 
