@@ -25,9 +25,9 @@ class Landing extends React.Component {
     >
       <img
         style={{
-          width: "40%",
-          height: "20%",
-          marginBottom: "320px",
+          width: "150px",
+          height: "150px",
+          marginBottom: "270px",
           borderRadius: "500px",
           border: "10px solid white",
         }}
