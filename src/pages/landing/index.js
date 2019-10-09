@@ -1,13 +1,14 @@
 import React from "react";
 import Wrapper from "../../components/wrapPage";
 import { images } from "../../assets";
+import { withRouter } from "next/router";
 
 class Landing extends React.Component {
   constructor(props) {
     super(props);
   }
 
-  land =
+  land = (
     <div
       style={{
         display: "flex",
@@ -32,15 +33,14 @@ class Landing extends React.Component {
         }}
         src={images.playBtn()}
         onClick={() => {
-          console.log('A user wanna plays game lah!');
-          document.location.href = "game";
-        }} />
+          this.props.router.push("/game");
+        }}
+      />
     </div>
+  );
 
   render = () => {
-    return (
-      <Wrapper bg={images.bgIntro()} children={this.land}></Wrapper>
-    );
+    return <Wrapper bg={images.bgIntro()} children={this.land}></Wrapper>;
   };
 }
-export default Landing;
+export default withRouter(Landing);

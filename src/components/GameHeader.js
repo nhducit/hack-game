@@ -13,7 +13,13 @@ class GameHeader extends React.Component {
     return (
       <div className="Header">
         <div className="HeaderLeft">
-          <img className="Oval" src="./avatar.png" alt="avatar" />
+          <img
+            className="Oval"
+            src="./avatar.png"
+            alt="avatar"
+            width="40px"
+            height="40px"
+          />
           <div className="Score">{score}</div>
         </div>
         <div style={{ flex: 1, backgroundColor: "green" }}></div>
