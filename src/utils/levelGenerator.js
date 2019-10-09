@@ -56,7 +56,7 @@ const shuffle = ({ cards }) => {
 
 const levels = {
   1: {
-    time: 199,
+    time: 119,
     numOfCards: 4,
     numOfBomb: 0,
     layout: {
