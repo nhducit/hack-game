@@ -12,11 +12,13 @@ import { withRouter } from "next/router";
 
 const Point = posed.div({
   visible: {
+    x: "70%",
     y: ({ nextY }) => nextY,
     opacity: 1,
-    transition: { duration: 250 }
+    transition: { duration: 550 }
   },
   hidden: {
+    x: "70%",
     y: ({ fromY }) => fromY,
     opacity: 0,
     transition: { duration: 0 }
@@ -126,7 +128,7 @@ class Game extends React.Component {
 
     setTimeout(() => {
       this.removePointUp({ time });
-    }, 300);
+    }, 600);
   };
 
   pointUpModel = ({ pointUp }) => {
@@ -241,15 +243,13 @@ class Game extends React.Component {
         />
         <Point
           pose={pointUp.value != 0 ? "visible" : "hidden"}
-          nextY={30}
-          fromY={40}
+          nextY={90}
+          fromY={100}
           style={{
             flexDirection: "column",
             alignItems: "center",
             display: "flex",
-            position: "absolute",
-            y: 40,
-            x: 200
+            position: "absolute"
           }}
         >
           <p
