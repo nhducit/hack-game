@@ -28,7 +28,12 @@ class Landing extends React.Component {
         {Object.keys(images).map(imageLink => {
           console.log("image", images[imageLink]());
           return (
-            <link rel="preload" href={images[imageLink]()} as="image"></link>
+            <link
+              key={images[imageLink]()}
+              rel="preload"
+              href={images[imageLink]()}
+              as="image"
+            ></link>
           );
         })}
       </Head>

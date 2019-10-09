@@ -47,7 +47,11 @@ class Game extends React.Component {
 
   setupLevel = ({ level }) => {
     const l = level || 1;
-    const config = generate({ level: l });
+    console.log("this.por", this.props);
+    const config = generate({
+      level: l,
+      isShuffle: !this.props.router.asPath.includes("demo")
+    });
     this.setState({
       ...defaultState,
       ...config,
