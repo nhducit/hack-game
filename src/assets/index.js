@@ -1,4 +1,6 @@
 const images = {
+  bgIntro: () => require("./images/bg_intro.png"),
+  playBtn: () => require("./images/play_btn.png"),
   bgClaim: () => require("./images/bg_claim_prize.png"),
   bgGame: () => require("./images/bg_game.png"),
   backCardIcon: () => require("./images/back_card.png"),

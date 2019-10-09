@@ -6,9 +6,7 @@ import GameHeader from "../../components/GameHeader";
 import { user, rules } from "../../utils/gamePlay";
 import moment from "moment";
 import Wrapper from "../../components/wrapPage";
-
 import GridLayout from "../../components/gridLayout";
-
 import { images } from "../../assets";
 import { withRouter } from "next/router";
 
