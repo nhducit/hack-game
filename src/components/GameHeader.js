@@ -2,7 +2,7 @@ import React from "react";
 import moment from "moment";
 import Countdown from "./Countdown";
 import "./GameHeader.css";
-
+import { user } from "../utils/gamePlay";
 class GameHeader extends React.Component {
   render() {
     const score = this.props.score;
@@ -22,7 +22,7 @@ class GameHeader extends React.Component {
       >
         <img
           className="Oval"
-          src="./avatar.png"
+          src={user.img}
           alt="avatar"
           width="40px"
           height="40px"

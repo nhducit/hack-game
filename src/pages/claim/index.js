@@ -64,7 +64,8 @@ class Claim extends React.Component {
               width: "334px",
               height: "56px",
               marginBottom: "16px",
-              backgroundSize: "cover"
+              backgroundSize: "cover",
+              opacity: side == "front" ? 1 : 0
             }}
           ></button>
           <div

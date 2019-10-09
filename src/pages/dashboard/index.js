@@ -102,13 +102,13 @@ class Dashboard extends React.Component {
         name: "@nathalie2",
         maxLevel: 2,
         point: 682,
-        img: images.cardWheel()
+        img: images.userAvatar()
       },
       {
         name: "@nathalie3",
         maxLevel: 2,
         point: 678,
-        img: images.cardWheel()
+        img: images.userAvatar()
       }
     ]
   };

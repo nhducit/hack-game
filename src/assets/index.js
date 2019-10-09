@@ -28,7 +28,8 @@ const images = {
   prize02: () => require("./images/prize_02.png"),
   prize03: () => require("./images/prize_03.png"),
   prize04: () => require("./images/prize_04.png"),
-  continuePlayButton: () => require("./images/btn_con_playing.png")
+  continuePlayButton: () => require("./images/btn_con_playing.png"),
+  userAvatar: () => require("./images/avatar.png")
 };
 
 export { images };
