@@ -25,6 +25,16 @@ class Landing extends React.Component {
     >
       <img
         style={{
+          width: "40%",
+          height: "20%",
+          marginBottom: "320px",
+          borderRadius: "500px",
+          border: "10px solid white",
+        }}
+        src={images.catAvatar()}
+      />
+      <img
+        style={{
           width: "95%",
           height: "auto",
           bottom: "15px",
