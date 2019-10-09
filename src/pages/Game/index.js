@@ -9,7 +9,7 @@ import Wrapper from "../../components/wrapPage";
 import GridLayout from "../../components/gridLayout";
 import { images } from "../../assets";
 import { withRouter } from "next/router";
-
+import "../../styles/global-index.css";
 const Point = posed.div({
   visible: {
     x: "70%",
@@ -274,6 +274,9 @@ class Game extends React.Component {
             {pointUpModel.title}
           </p>
         </Point>
+        <style global jsx>
+          {``}
+        </style>
       </Wrapper>
     );
   };

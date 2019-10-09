@@ -30,12 +30,26 @@ const bomb = {
   type: "card"
 };
 
+function getRandom(arr, n) {
+  var result = new Array(n),
+    len = arr.length,
+    taken = new Array(len);
+  if (n > len)
+    throw new RangeError("getRandom: more elements taken than available");
+  while (n--) {
+    var x = Math.floor(Math.random() * len);
+    result[n] = arr[x in taken ? taken[x] : x];
+    taken[x] = --len in taken ? taken[len] : len;
+  }
+  return result;
+}
+
 const randomChooseCards = ({ number }) => {
-  return cards.slice(0, number); // refactor later
+  return getRandom(cards, number); // refactor later
 };
 
 const shuffle = ({ cards }) => {
-  return cards; // refactor later
+  return cards.sort(() => 0.5 - Math.random()); // refactor later
 };
 
 const levels = {
