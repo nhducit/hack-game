@@ -22,6 +22,7 @@ const images = {
   cardWheelChair: () => require("./images/card_wheelchair.png"),
   cardTyre: () => require("./images/card_tyre.png"),
   collectButton: () => require("./images/btn_collect.png"),
+  catAvatar: () => require("./images/cat.png"),
   prize01: () => require("./images/prize_01.png"),
   prize02: () => require("./images/prize_02.png"),
   prize03: () => require("./images/prize_03.png"),
