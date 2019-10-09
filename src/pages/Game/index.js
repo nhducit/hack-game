@@ -9,6 +9,8 @@ import Wrapper from "../../components/wrapPage";
 import GridLayout from "../../components/gridLayout";
 import { images } from "../../assets";
 import { withRouter } from "next/router";
+import TimeUp from "../../components/TimeUp";
+
 import "../../styles/global-index.css";
 const Point = posed.div({
   visible: {
@@ -31,7 +33,8 @@ const defaultState = {
   blank: [],
   canFlip: 2,
   openedCards: {},
-  pointUp: { time: 0, value: 0 }
+  pointUp: { time: 0, value: 0 },
+  showPopup: false
 };
 
 class Game extends React.Component {
@@ -167,8 +170,6 @@ class Game extends React.Component {
       } else {
         this.appendPoint({ value: rules.failed, type: "failed" });
       }
-      this.onFlipCard({ index: keys[0] });
-      this.onFlipCard({ index: keys[1] });
       return;
     }
 
@@ -182,15 +183,19 @@ class Game extends React.Component {
 
   onFlipCard = ({ index }) => {
     var { canFlip, openedCards, cards } = this.state;
-    if (Object.keys(openedCards).length < canFlip) {
-      openedCards[index] = cards[index];
-      this.setState({ openedCards: { ...openedCards } });
-      this.setCardSide({ index, side: "front" });
-      this.checkCards();
-      setTimeout(() => {
-        this.onFlipTimeOut({ index });
-      }, 2000);
+
+    if (Object.keys(openedCards).length >= canFlip) {
+      return;
+      // Object.keys(openedCards).forEach(k => this.onFlipTimeOut({ index: k }));
     }
+
+    openedCards[index] = cards[index];
+    this.setState({ openedCards: { ...openedCards } });
+    this.setCardSide({ index, side: "front" });
+    this.checkCards();
+    setTimeout(() => {
+      this.onFlipTimeOut({ index });
+    }, 1500);
   };
 
   onFlipTimeOut = ({ index }) => {
@@ -204,7 +209,7 @@ class Game extends React.Component {
   };
 
   onTimeOver = () => {
-    //show popup
+    this.setState({ showPopup: true });
   };
 
   toNextLevel = () => {
@@ -214,11 +219,13 @@ class Game extends React.Component {
     const point = remainingTime * rules.speed;
     this.appendPoint({ type: "speed", value: Math.max(0, point) });
 
-    if (nextLevel > numOfLevel) {
-      this.props.router.push("/dashboard");
-    } else {
-      this.setupLevel({ level: nextLevel });
-    }
+    setTimeout(() => {
+      if (nextLevel > numOfLevel) {
+        this.props.router.push("/dashboard");
+      } else {
+        this.setupLevel({ level: nextLevel });
+      }
+    }, 500);
   };
 
   render = () => {
@@ -276,6 +283,22 @@ class Game extends React.Component {
             {pointUpModel.title}
           </p>
         </Point>
+        {this.state.showPopup ? (
+          <div
+            onClick={() => {
+              this.props.router.push("/dashboard");
+            }}
+            style={{
+              backgroundColor: "rgba(0, 0, 0, 0.5)",
+              position: "absolute",
+              display: "flex",
+              width: "100%",
+              height: "100%"
+            }}
+          >
+            <TimeUp score={this.state.point} level={this.state.level} />
+          </div>
+        ) : null}
         <style global jsx>
           {``}
         </style>

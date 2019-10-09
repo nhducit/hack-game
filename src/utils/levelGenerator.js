@@ -45,18 +45,20 @@ function getRandom(arr, n) {
 }
 
 const randomChooseCards = ({ number }) => {
-  return getRandom(cards, number); // refactor later
+  return cards.slice(0, number);
+  // return getRandom(cards, number);
 };
 
 const shuffle = ({ cards }) => {
-  return cards.sort(() => 0.5 - Math.random()); // refactor later
+  return cards;
+  // return cards.sort(() => 0.5 - Math.random());
 };
 
 const levels = {
   1: {
-    time: 119,
-    numOfCards: 3,
-    numOfBomb: 1,
+    time: 199,
+    numOfCards: 4,
+    numOfBomb: 0,
     layout: {
       rows: 3,
       columns: 4
@@ -82,27 +84,19 @@ const levels = {
   },
   2: {
     time: 119,
-    numOfCards: 7,
+    numOfCards: 6,
     numOfBomb: 1,
     layout: {
-      rows: 5,
+      rows: 4,
       columns: 4
     },
     blank: [
       {
-        x: 0,
+        x: 3,
         y: 0
       },
       {
-        x: 0,
-        y: 3
-      },
-      {
-        x: 2,
-        y: 0
-      },
-      {
-        x: 2,
+        x: 3,
         y: 3
       }
     ]
