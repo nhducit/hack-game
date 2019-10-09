@@ -5,6 +5,6 @@ import GridLayout from "../components/gridLayout";
 import Countdown from "../components/Countdown";
 import moment from "moment";
 
-import Game from "./Game";
+import Game from "./game";
 
 export default Game;

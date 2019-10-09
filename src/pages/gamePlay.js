@@ -1,5 +1,10 @@
+import { images } from "../assets";
+
 const user = {
-  point: 0
+  point: 0,
+  name: "@anhpham",
+  img: images.cardWheel(),
+  maxLevel: 1
 };
 
 const rules = {

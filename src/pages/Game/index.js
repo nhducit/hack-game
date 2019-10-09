@@ -10,6 +10,7 @@ import Wrapper from "../../components/wrapPage";
 import GridLayout from "../../components/gridLayout";
 
 import { images } from "../../assets";
+import { withRouter } from "next/router";
 
 const Point = posed.div({
   visible: {
@@ -80,8 +81,6 @@ class Game extends React.Component {
 
     this.setState({ cards });
 
-    console.log("NGHIA: numOfMarked");
-    console.log(numOfMarked);
     if (numOfMarked == cards.length) {
       this.toNextLevel();
     }
@@ -209,7 +208,7 @@ class Game extends React.Component {
   toNextLevel = () => {
     let nextLevel = this.state.level + 1;
     if (nextLevel > numOfLevel) {
-      // go to dashboard
+      this.props.router.push("/dashboard");
     } else {
       this.setupLevel({ level: nextLevel });
     }
@@ -277,4 +276,4 @@ class Game extends React.Component {
   };
 }
 
-export default Game;
+export default withRouter(Game);
