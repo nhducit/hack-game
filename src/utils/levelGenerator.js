@@ -45,13 +45,11 @@ function getRandom(arr, n) {
 }
 
 const randomChooseCards = ({ number }) => {
-  return cards.slice(0, number);
-  // return getRandom(cards, number);
+  return getRandom(cards, number);
 };
 
 const shuffle = ({ cards }) => {
-  return cards;
-  // return cards.sort(() => 0.5 - Math.random());
+  return cards.sort(() => 0.5 - Math.random());
 };
 
 const levels = {
@@ -105,7 +103,7 @@ const levels = {
 
 const numOfLevel = 2;
 
-const generate = ({ level }) => {
+const generate = ({ level, isShuffle }) => {
   const config = levels[level];
 
   const randomCards = randomChooseCards({
@@ -115,7 +113,9 @@ const generate = ({ level }) => {
     ...bomb
   }));
   const oneSideCards = [...randomCards, ...bombCards];
-  const cards = shuffle({ cards: [...oneSideCards, ...oneSideCards] });
+  const cards = isShuffle
+    ? shuffle({ cards: [...oneSideCards, ...oneSideCards] })
+    : [...oneSideCards, ...oneSideCards];
   return {
     cards,
     blank: config.blank,

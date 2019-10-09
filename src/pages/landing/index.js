@@ -29,7 +29,7 @@ class Landing extends React.Component {
           height: "150px",
           marginBottom: "270px",
           borderRadius: "500px",
-          border: "10px solid white",
+          border: "10px solid white"
         }}
         src={images.catAvatar()}
       />
@@ -43,7 +43,7 @@ class Landing extends React.Component {
         }}
         src={images.playBtn()}
         onClick={() => {
-          this.props.router.push("/game");
+          this.props.router.push(`/game${this.props.demo ? "?demo=true" : ""}`);
         }}
       />
     </div>
