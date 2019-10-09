@@ -14,16 +14,17 @@ class Card extends React.Component {
         key={props.key}
         isFlipped={isFlipped}
         flipDirection="horizontal"
+        containerStyle={{
+          marginLeft: props.marginLeft,
+          borderRadius: "4px"
+        }}
       >
-        <button
+        <div
           key="front"
           onClick={this.onBackViewClick}
           style={{
-            backgroundColor: "#57585a",
             width: props.width,
             height: props.height,
-            marginLeft: props.marginLeft,
-            borderRadius: "4px",
             backgroundImage: `url(${backImage})`,
             backgroundSize: "cover"
           }}
@@ -31,13 +32,8 @@ class Card extends React.Component {
         <div
           key="back"
           style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
             width: props.width,
             height: props.height,
-            marginLeft: props.marginLeft,
-            borderRadius: "4px",
             backgroundImage: `url(${image})`,
             backgroundSize: "cover"
           }}
