@@ -1,6 +1,7 @@
 const images = {
   bgIntro: () => require("./images/bg_intro.png"),
   playBtn: () => require("./images/play_btn.png"),
+  bgClaim: () => require("./images/bg_claim_prize.png"),
   bgGame: () => require("./images/bg_game.png"),
   backCardIcon: () => require("./images/back_card.png"),
   backCardClaimIcon: () => require("./images/back_card_lg.png"),
@@ -19,7 +20,13 @@ const images = {
   cardTree: () => require("./images/card_tree.png"),
   cardWheel: () => require("./images/card_wheel.png"),
   cardWheelChair: () => require("./images/card_wheelchair.png"),
-  cardTyre: () => require("./images/card_tyre.png")
+  cardTyre: () => require("./images/card_tyre.png"),
+  collectButton: () => require("./images/btn_collect.png"),
+  prize01: () => require("./images/prize_01.png"),
+  prize02: () => require("./images/prize_02.png"),
+  prize03: () => require("./images/prize_03.png"),
+  prize04: () => require("./images/prize_04.png"),
+  continuePlayButton: () => require("./images/btn_con_playing.png")
 };
 
 export { images };

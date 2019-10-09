@@ -1,4 +1,4 @@
-import { images } from "../../assets";
+import { images } from "../assets";
 
 const cards = [
   images.cardABC(),
@@ -71,7 +71,7 @@ const levels = {
     numOfCards: 7,
     numOfBomb: 1,
     layout: {
-      rows: 4,
+      rows: 5,
       columns: 4
     },
     blank: [
@@ -108,7 +108,6 @@ const generate = ({ level }) => {
   }));
   const oneSideCards = [...randomCards, ...bombCards];
   const cards = shuffle({ cards: [...oneSideCards, ...oneSideCards] });
-
   return {
     cards,
     blank: config.blank,
