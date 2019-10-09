@@ -3,7 +3,7 @@ import { images } from "../assets";
 const user = {
   point: 0,
   name: "@anhpham",
-  img: images.cardWheel(),
+  img: images.catAvatar(),
   maxLevel: 1
 };
 
