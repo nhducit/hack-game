@@ -11383,6 +11383,49 @@ video {
   text-align: center;
 }
 
+/* roboto-regular - latin */
+
+@font-face {
+  font-family: "Fabriga";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  src: local("Fabriga"), local("Fabriga-Regular"),
+    url("/static/Fabriga.ttf") format("ttf"); /* Chrome 26+, Opera 23+, Firefox 39+ */
+}
+
+/* roboto-500 - latin */
+
+@font-face {
+  font-family: "Fabriga";
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  src: local("Fabriga Medium"), local("Fabriga-Medium"),
+    url("/static/Fabriga-Bold.ttf") format("ttf"); /* Chrome 26+, Opera 23+, Firefox 39+ */
+}
+
+/* roboto-700 - latin */
+
+@font-face {
+  font-family: "Fabriga";
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  src: local("Fabriga Bold"), local("Fabriga-Bold"),
+    url("/static/Fabriga-Bold.ttf") format("ttf"); /* Chrome 26+, Opera 23+, Firefox 39+ */
+}
+
+* {
+  font-family: "Fabriga", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;
