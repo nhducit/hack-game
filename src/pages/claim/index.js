@@ -96,7 +96,6 @@ class Claim extends React.Component {
               >
                 <p
                   style={{
-                    fontFamily: "Fabriga",
                     fontSize: "34px",
                     fontWeight: "bold",
                     color: "white"
@@ -107,7 +106,7 @@ class Claim extends React.Component {
                 <p
                   style={{
                     marginTop: "4px",
-                    fontFamily: "Fabriga",
+
                     fontSize: "20px",
                     fontWeight: "bold",
                     color: "white"
@@ -119,7 +118,6 @@ class Claim extends React.Component {
             ) : (
               <p
                 style={{
-                  fontFamily: "Fabriga",
                   fontSize: "34px",
                   fontWeight: "bold",
                   color: "white",

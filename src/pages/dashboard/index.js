@@ -27,7 +27,6 @@ const Item = ({ rank, img, name, maxLevel, point, isSelected, onClick }) => (
     >
       <p
         style={{
-          fontFamily: "Fabriga",
           fontSize: "24px",
           fontWeight: "bold",
           color: "#2c2c2d"
@@ -52,7 +51,6 @@ const Item = ({ rank, img, name, maxLevel, point, isSelected, onClick }) => (
       >
         <p
           style={{
-            fontFamily: "Fabriga",
             fontSize: "17px",
             color: "#008f79",
             lineHeight: 1.41
@@ -62,7 +60,6 @@ const Item = ({ rank, img, name, maxLevel, point, isSelected, onClick }) => (
         </p>
         <p
           style={{
-            fontFamily: "Fabriga",
             fontSize: "15px",
             fontWeight: "bold",
             color: "#57585a",
@@ -75,7 +72,6 @@ const Item = ({ rank, img, name, maxLevel, point, isSelected, onClick }) => (
       <div style={{ flex: 1 }}></div>
       <p
         style={{
-          fontFamily: "Fabriga",
           fontSize: "24px",
           fontWeight: "bold",
           color: "#2c2c2d",
@@ -133,7 +129,6 @@ class Dashboard extends React.Component {
       <Wrapper bg={images.bgClaim()}>
         <p
           style={{
-            fontFamily: "Fabriga",
             fontSize: "34px",
             fontWeight: "bold",
             color: "#ffffff",

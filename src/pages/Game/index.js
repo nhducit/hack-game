@@ -263,7 +263,6 @@ class Game extends React.Component {
         >
           <p
             style={{
-              fontFamily: "Fabriga",
               fontSize: "20px",
               fontWeight: "bold",
               lineHeight: 1.67,
@@ -274,7 +273,6 @@ class Game extends React.Component {
           </p>
           <p
             style={{
-              fontFamily: "Fabriga",
               fontSize: "48px",
               fontWeight: "bold",
               color: "#33e1ff"

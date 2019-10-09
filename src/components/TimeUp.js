@@ -30,7 +30,7 @@ class TimeUp extends React.Component {
             style={{
               width: "95px",
               height: "95px",
-              border: "10px solid white",
+              border: "10px solid white"
             }}
             src={images.catAvatar()}
           />
@@ -48,7 +48,7 @@ class TimeUp extends React.Component {
           style={{
             width: "152px",
             height: "26px",
-            fontFamily: "Fabriga",
+
             fontSize: "20px",
             fontWeight: "bold",
             fontStyle: "normal",
@@ -65,7 +65,7 @@ class TimeUp extends React.Component {
           style={{
             width: "124px",
             height: "40px",
-            fontFamily: "Fabriga",
+
             fontSize: "50px",
             fontWeight: "bold",
             fontStyle: "normal",
@@ -82,7 +82,7 @@ class TimeUp extends React.Component {
         <div
           style={{
             height: "26px",
-            fontFamily: "Fabriga",
+
             fontSize: "20px",
             fontWeight: "bold",
             fontStyle: "normal",
