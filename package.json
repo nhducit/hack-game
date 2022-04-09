@@ -20,7 +20,7 @@
     "isomorphic-unfetch": "3.0.0",
     "ky": "0.15.0",
     "lodash": "^4.17.15",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "next": "9.1.1",
     "next-fonts": "^0.19.0",
     "next-images": "^1.2.0",
