@@ -11,7 +11,7 @@
     "@zeit/next-css": "1.0.1",
     "antd": "3.23.6",
     "bs-platform": "5.0.6",
-    "express": "4.17.1",
+    "express": "4.17.3",
     "fetch": "1.1.0",
     "fp-ts": "2.1.0",
     "gentype": "2.40.1",
